@@ -21,7 +21,7 @@ body {
     --roxo-400: #8441F1;
     --roxo-300: #A371F4;
     --roxo-200: #C2A0F8;
-    --roxo-100: #E0D0FB;
+    --roxo-100: #E0D0FB; 
 
     --verde-800: #111F00;
     --verde-700: #396600;
@@ -54,7 +54,7 @@ nav {
     border: 1px solid var(--roxo-200);
     border-radius: 15px;
     width: 70%;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: #180142;
     backdrop-filter: blur(10px); 
     margin: 0 auto;
 }
@@ -142,67 +142,107 @@ nav ul li a, .right-nav a {
 
 
 
-h1 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
 
-p {
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-}
 
-.saldo {
-    background-color: #1E0730;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-}
-
-.saldo strong {
-    color: #FFFFFF;
-}
 
 .funds-options {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 40px;
 }
 
 .fund-option {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #220639;
-    padding: 10px;
-    border-radius: 8px;
+    background-color: #180142;
+    padding: 40px;
+    border-radius: 15px;
+    width: 80%;
+    border: 1px solid var(--roxo-300);
 }
 
 .fund-option span {
-    color: #A0FF03;
-}
-
-.container {
-    text-align: center;
-    padding: 20px;
-    width: 300px;
-    margin: 0 auto;
+    font-family: "Jersey 10";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; 
+    letter-spacing: 0.48px;
+    color: var(--verde-500);
 }
 
 button {
     background-color: #A0FF03;
-    color: #220639;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
+    color: var(--branco);
+    padding: 10px 16px;
+    border-radius: 46px;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
+    border: 1px solid var(--verde-200);
 }
 
-button:hover {
-    background-color: #8CE002;
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 100px;
+    max-height: 216px;
+    margin: 100px;
+}
+
+.textos {
+    padding: 0px 100px;
+}
+
+.textos h2 {
+    font-family: "Jersey 10";
+    font-size: 71px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 81px; /* 100% */
+}
+
+.textos p {
+    max-width: 420px;
+}
+
+.saldo {
+    background-color: #180142;
+    border: 1px solid var(--roxo-300);
+    border-radius: 15px;
+    display: flex;
+    padding: 40px 40px;
+    
+}
+ 
+.saldo span {
+    padding: 0px 20px;
+    font-family: "Jersey 10";
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; 
+    letter-spacing: 1px;
+    color: var(--branco);
+}
+
+.saldo strong {
+    padding: 0px 20px;
+    font-family: "Jersey 10";
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; 
+    letter-spacing: 1px;
+    color: var(--branco);
 }
 
 
