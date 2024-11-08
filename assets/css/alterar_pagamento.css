@@ -2,8 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'inter', sans-serif;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0D0221;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 :root {
     --roxo-800: #0E002F;
     --roxo-700: #340576;
@@ -34,336 +43,6 @@
     --branco: #fff;
     --preto: #000;
     --radio-gradient-roxo: linear-gradient(142deg, rgba(150,96,228,1) 0%, rgba(150,96,228,1) 20%, rgba(86,4,200,1) 49%);
-}
-
-h1 {
-    font-family: "Jersey 10";
-    font-size: 81px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 81px; /* 100% */
-}
-
-h2 {
-    font-family: "Jersey 10";
-    font-size: 81px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 81px; /* 100% */
-}
-
-h3 {
-    font-family: "Jersey 10";
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50px; /* 92.593% */
-}
-
-h4 {
-    font-family: "Jersey 10";
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 36px; /* 100% */
-    letter-spacing: 0.72px;
-}
-
-h5 {
-    font-family: "Jersey 10";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29px; /* 120.833% */
-    letter-spacing: 0.48px;
-}
-
-.subtitle-large {
-    font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px; /* 133.333% */
-}
-
-.subtitle-regular {
-    font-family: "Inter";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px; /* 125% */
-}
-
-.subtitle-small {
-    font-family: "Inter";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px; /* 128.571% */
-}
-
-.body-large {
-    font-family: "Inter";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 133.333% */
-}
-
-.body-regular {
-    font-family: "Inter";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-}
-
-.body-small {
-    font-family: "Inter";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px; /* 128.571% */
-}
-
-.label-large {
-    font-family: "Inter";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 19px; /* 118.75% */
-    letter-spacing: 0.96px;
-    text-transform: uppercase;
-}
-
-.label-regular {
-    font-family: "Inter";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 16px; /* 114.286% */
-    letter-spacing: 0.84px;
-    text-transform: uppercase;
-}
-
-.label-small {
-    font-family: "Inter";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 16px; /* 133.333% */
-    letter-spacing: 0.72px;
-    text-transform: uppercase;
-}
-
-.tag-large {
-    font-family: "Inter";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px; /* 137.5% */
-    letter-spacing: 0.96px;
-    text-transform: uppercase;
-}
-
-.tag-regular {
-    font-family: "Inter";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px; /* 142.857% */
-    letter-spacing: 0.84px;
-    text-transform: uppercase;
-}
-
-.tag-small {
-    font-family: "Inter";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px; /* 133.333% */
-    letter-spacing: 0.72px;
-    text-transform: uppercase;
-}
-
-.btn {
-    padding: 10px 16px;
-    text-decoration: none;
-    border-radius: 28px;
-    border: 1px solid var(--roxo-400);
-    background: var(--radio-gradient-roxo);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600px;
-    line-height: 100%;
-    letter-spacing: 0.72px;
-    text-transform: uppercase;
-    color: var(--branco);
-}
-
-.btn:hover {
-    opacity: 60%;
-}
-
-.btn-outline {
-    padding: 10px 16px;
-    text-decoration: none;
-    border-radius: 28px;
-    border: 1px solid var(--roxo-400);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600px;
-    line-height: 100%;
-    letter-spacing: 0.72px;
-    text-transform: uppercase;
-    color: var(--branco);
-}
-
-.btn-outline:hover {
-    opacity: 60%;
-}
-
-/* ----------- CSS DANIEL -----------  */
-
-.section-jogos-imperdiveis {
-    width: 80vw;
-    max-width: 1225px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: center;
-    gap: 48px;
-    margin: 75px auto;
-}
-
-.section-jogos-imperdiveis h3 {
-    color: var(--branco);
-}
-
-.container-jogos-imperdiveis {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    align-self: stretch;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-.card-jogos-imperdiveis {
-    display: flex;
-    height: 100%;
-    width: 344px;
-    padding: 24px;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 40px;
-    flex: 1 0 0;
-    border-radius: 15px;
-    border: 1px solid var(--roxo-200);
-    background: radial-gradient(1067.85% 316.35% at 115.5% 253.33%, rgba(194, 160, 248, 0.08) 0%, rgba(86, 4, 200, 0.08) 100%);
-}
-
-.card-jogos-imperdiveis img {
-width: 100%;
-overflow: hidden;
-}
-
-.content-card-jogos-imperdiveis {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: flex-start;
-    align-self: stretch;
-}
-
-.text-card-jogos-imperdiveis {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.titulo-e-dev-jogos-imperdiveis {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.titulo-e-dev-jogos-imperdiveis .body-small {
-    color: var(--cinza-200);
-    padding-bottom: 12px;
-}
-
-.botoes-jogos-imperdiveis {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.text-card-jogos-imperdiveis .tag-regular {
-    color: var(--verde-500);
-    padding-bottom: 12px;
-}
-
-.text-card-jogos-imperdiveis p {
-    color: var(--branco);
-}
-
-.tags-jogos-imperdiveis {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    color: var(--roxo-300);
-    padding: 12px 0px;
-}
-.tags-jogos-imperdiveis p {
-    color: var(--roxo-200);
-}
-
-.section-melhor-jogo-da-semana {
-    display: flex;
-    width: 80vw;
-    max-width: 1225px;
-    min-height: 600px;
-    align-items: center;
-    background-image: url(../images/section-melhor-jogo-da-semana.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    border-radius: 16px;
-    border: solid 1px var(--roxo-200);
-    padding: 0 60px;
-    color: var(--branco);
-}
-
-.content-melhor-jogo-da-semana {
-    display: flex;
-    flex-direction: column;
-    gap: 54px;
-}
-
-.text-descricao-melhor-jogo-da-semana {
-    display: flex;
-    flex-direction: column;
-    max-width: 70%;
-    gap: 32px;
-
-}
-
-.botoes-melhor-jogo-da-semana {
-    display: flex;
-    gap: 12px;
-}
-
-/* ----------- CSS MAHER -----------  */
-
-body {
-    background-color: #0E002F;
-    color: white;
-    min-height: 100vh;
-    overflow-x: hidden;
 }
 
 nav {
@@ -411,85 +90,138 @@ nav ul li a, .right-nav a {
 }
 
 .header {
-    background-image: url('../images/fundo.png');
-    background-size: cover;
-    background-position: center;
-    height: 95vh;
-    display: flex;
     padding-top: 24px;
-    flex-direction: column;
-    align-items: center;
-    align-self: stretch;
-    flex-direction: column;
 }
 
-
-.hero {
-    display: flex;
-    height: 100%;
-    justify-content: center; 
-    align-items: center; 
-    text-align: center;
-}
-
-.hero-text {
-    max-width: 870px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hero-text h1 {
-    font-size: 5em;
-    line-height: 100%;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    margin-bottom: 30px;
-    max-width: 580px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.btn-primary, .btn-secondary {
-    padding: 10px 24px;
-    border-radius: 28px;
+.btn {
+    padding: 10px 16px;
     text-decoration: none;
-    font-size: 14px;
+    border-radius: 28px;
+    border: 1px solid var(--roxo-400);
+    background: var(--radio-gradient-roxo);
+    font-size: 12px;
     font-style: normal;
     font-weight: 600px;
     line-height: 100%;
     letter-spacing: 0.72px;
+    text-transform: uppercase;
+    color: var(--branco);
 }
 
-.btn-primary {
-    background: radial-gradient(411.63% 327.45% at 104.57% 158.33%, #81E500 0%, #477F00 100%);
-    color: #fff;
-    border: 1px solid var(--verde-200);
+.btn:hover {
+    opacity: 60%;
 }
 
-.btn-secondary {
-    border: 1px solid var(--verde-200);
-    color: white;
+.btn-outline {
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 28px;
+    border: 1px solid var(--roxo-400);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600px;
+    line-height: 100%;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    color: var(--branco);
 }
 
-.hero-image {
-    position: absolute;
-    right: -480px;
-    bottom: 40px;
-    z-index: 2;
+.btn-outline:hover {
+    opacity: 60%;
 }
 
-.hero-image img {
-    width: 90%;
-    max-height: 900px;
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.saldo {
+    background-color: #1E0730;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.saldo strong {
+    color: #FFFFFF;
+}
+
+.funds-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fund-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #220639;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.fund-option span {
+    color: #A0FF03;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #A0FF03;
+    color: #220639;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8CE002;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .menufooter {
     color: #E0D0FB; 
@@ -645,363 +377,5 @@ nav ul li a, .right-nav a {
     display: inline-flex;
 }
 
-.jogar {
-    font-size: 12px; 
-    font-family: Inter; 
-    font-weight: 600; 
-    text-transform: uppercase; 
-    line-height: 16px; 
-    letter-spacing: 0.72px; 
-    word-wrap: break-word
-}
 
-.btnsmall {
-    padding-left: 12px; 
-    padding-right: 12px; 
-    padding-top: 6px; 
-    padding-bottom: 6px; 
-    background: linear-gradient(0deg, #8441F1 0%, #8441F1 100%), 
-    radial-gradient(31.75% 9.40% at 44.79% 5.27%, #C2A0F8 0%, #5604C8 100%); 
-    border-radius: 28px; 
-    border: 1px #A371F4 solid;
-    justify-content: center; 
-    align-items: center; 
-    gap: 10px; 
-    display: flex;
-    text-decoration: none;
-    color: #e6e6e6;
-}
 
-.fonte3 {
-    color: #E6E6E6; 
-    font-size: 12px; 
-    font-family: Inter; 
-    font-weight: 500; 
-    text-transform: uppercase;
-    line-height: 16px; 
-    letter-spacing: 0.72px; 
-    word-wrap: break-word;
-}
-
-.fonte2 {
-    text-align: center; 
-    color: #E6E6E6; 
-    font-size: 12px; 
-    font-family: Inter; 
-    font-weight: 600; 
-    text-transform: uppercase; 
-    word-wrap: break-word;
-}
-
-.fonte1 {
-    text-align: center; 
-    color: #E6E6E6; 
-    font-size: 12px; 
-    font-family: Inter; 
-    font-weight: 500; 
-    text-transform: uppercase; 
-    line-height: 16px; 
-    letter-spacing: 0.72px; 
-    word-wrap: break-word;
-}
-
-.tipojogo {
-    align-self: stretch; 
-    justify-content: flex-start; 
-    align-items: center; 
-    gap: 10px; 
-    display: inline-flex;
-}
-
-.desenvolvido {
-    align-self: stretch; 
-    color: #999999; 
-    font-size: 14px; 
-    font-family: Inter; 
-    font-weight: 400; 
-    line-height: 18px; 
-    word-wrap: break-word;
-
-}
-
-.nomejogo {
-    align-self: stretch; 
-    color: white; 
-    font-size: 18px; 
-    font-family: Inter; 
-    font-weight: 700; 
-    line-height: 24px; 
-    word-wrap: break-word;
-}
-
-.nomejogo1 {
-    height: 13px; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    gap: 12px;
-    display: flex;
-}
-
-.containerjogo1 {
-    align-self: stretch;
-    height: 35px; 
-    flex-direction: 
-    column; justify-content: 
-    flex-start; align-items: 
-    flex-start; 
-    gap: 12px; 
-    display: flex;
-}
-
-.containerjogo {
-    align-self: stretch; 
-    height: 35px; 
-    flex-direction: 
-    column; justify-content: 
-    flex-start; 
-    align-items: flex-start; 
-    gap: 24px; 
-    display: flex;
-}
-
-.containeralinha {
-    width: 282px; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    gap: 18px; 
-    display: inline-flex;
-}
-
-.retangle1 {
-    width: 64px; 
-    height: 64px; 
-    border-radius: 8px;
-}
-
-.conteudojogo {
-    justify-content: flex-start; 
-    align-items: center; 
-    gap: 24px; 
-    display: flex;
-}
-
-.classificacaojogo {
-    color: #A371F4; 
-    font-size: 24px; 
-    font-family: "Jersey 10"; 
-    font-weight: 400; 
-    line-height:29px; 
-    letter-spacing:0.48px; 
-    word-wrap:break-word;
-}
-
-.linhajogos {
-    align-self: stretch; 
-    padding: 24px; 
-    border-bottom: 1px #A371F4 solid; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 42px; 
-    display: inline-flex;
-}
-
-.conteudojogosup {
-    justify-content: flex-start; 
-    align-items: center; 
-    gap: 24px; 
-    display: flex;
-}
-
-.favoritosright {
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    display: inline-flex;
-}
-
-.linhajogos1 {
-    align-self: stretch; 
-    padding: 24px; 
-    border-bottom: 1px #A371F4 solid; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 42px; 
-    display: inline-flex;
-}
-
-.coluna1 {
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    display: inline-flex;
-}
-
-.coluna {
-    align-self: stretch; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    gap: 64px; 
-    display: inline-flex;
-}
-
-.brbrasil {
-    color: white; 
-    font-size: 54px; 
-    font-family: Jersey 10; 
-    font-weight: 400; 
-    line-height: 50px; 
-    word-wrap: break-word;
-}
-
-.favoritosdosbrasileiros {
-    align-self: stretch;
-    justify-content: center;
-
-}
-
-.favoritosdosbrasileiros3 {
-        width: 80vw;
-        max-width: 1225px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        align-content: center;
-        gap: 48px;
-        margin: 75px auto;
-}
-
-/* ----------- CSS EMANUEL -----------  */
-
-.container {
-    max-width: 1200px;
-    width: 63.5rem;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-    margin-top: 75px;
-    margin-bottom: 75px;
-}
-
-.devs-brasileiros h3 {
-    font-family: "Jersey 10";
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 54px; /* 100% */
-}
-
-.devs-brasileiros p {
-    font-size: 1rem;
-    color: #fff;
-}
-
-.highlight {
-    color: #00ff00;
-}
-
-.dev-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.dev-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
-.dev-card {
-    background-color: #240033;
-    border: 1px solid #663399;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: left;
-    align-content: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-    padding: 24px 24px;
-    width: 100%;
-}
-
-.dev-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.dev-info{
-    width: 100%;
-}
-
-.dev-info h3 {
-    font-family: "inter";
-    font-weight: 700;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.dev-info p {
-    font-size: 0.9rem;
-}
-
-.dev-flag {
-    background-color: #6C05FA;
-    margin-right: 35px;
-    border-radius: 8px;
-    width: 42px;
-    text-align: center;
-}
-
-.devs-brasileiros-titulo-descricao {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 2rem;
-}
-
-.section-envie-seu-jogo {
-    display: flex;
-    width: 76.5rem;
-    padding: 3.75rem;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2.25rem;
-    border-radius: 1rem;
-    border: 1px solid #E0FFB8;
-    background: var(--radio-gradient-green, radial-gradient(411.63% 327.45% at 104.57% 158.33%, #81E500 0%, #477F00 100%));
-}
-
-.content-envie-seu-jogo {
-    display: flex;
-    width: 45.6rem;
-    padding: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2.25rem;
-}
-
-.content-envie-seu-jogo img {
-    max-width: 5.75rem;
-}
-
-.text-envie-seu-jogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    gap: 24px;
-}
