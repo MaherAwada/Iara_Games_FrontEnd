@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico de compras</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="../css/historico.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nerko+One&family=New+Amsterdam&family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navigation-bar navbar-expand-lg mx-auto my-3 py-3">
+    <div class="container d-flex justify-content-between">
+        <ul class="navbar-nav d-flex align-items-center">
+            <li class="navigation-item mx-2">
+                <a class="navigation-link" href="#">CATEGORIAS</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="#">FAVORITOS</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="#">NOVOS</a>
+            </li>
+        </ul>
+        <a class="navbar-brand" href="../../index.html">
+            <img src="../images/logo.svg" alt="Iara Games" class="site-logo">
+        </a>
+        <ul class="navbar-nav d-flex align-items-center">
+            <li class="navigation-item">
+                <button class="btn submit-game-button">ENVIAR MEU JOGO</button>
+            </li>
+            <li class="navigation-item dropdown">
+              <button class="btn user-menu-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../images/user.png" alt="User" class="user-avatar">
+                <span class="dropdown-arrow"><i class="bi bi-chevron-down"></i></span>
+            </button>
+                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                    <li><a class="user-menu-item" href="../pages/perfil.html">Perfil</a></li>
+                    <li><a class="user-menu-item" href="#">Histórico de compras</a></li>
+                    <li><a class="user-menu-item" href="#">Formas de pagamento</a></li>
+                    <li><a class="user-menu-item" href="../pages/add_coins.html">Iara Coins</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="user-menu-item" href="../pages/login.html">Sair</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- Main Content -->
+  <div class="container my-4">
+    <div class="table-container">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Detalhes (258)</a>
+        </li>
+      </ul>
+      <table class="table table-striped mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Descrição</th>
+            <th scope="col">Forma de pagamento</th>
+            <th scope="col">Valor</th>
+            <th scope="col">ID</th>
+            <th scope="col">Data do pedido</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="../images/corvo-negro.png" alt="Game Thumbnail" class="me-2" width="50">
+                <div>
+                  <div>TipoBloco</div>
+                  <small>Ação - Plataforma</small>
+                </div>
+              </div>
+            </td>
+            <td>Débito</td>
+            <td>R$149,90</td>
+            <td>12345</td>
+            <td>01/11/2024</td>
+            <td><i class="bi bi-three-dots options-icon"></i></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="../images/futebol.png" alt="Game Thumbnail" class="me-2" width="50">
+                <div>
+                  <div>Futebol na Rua</div>
+                  <small>Esporte - Competição</small>
+                </div>
+              </div>
+            </td>
+            <td>Pix</td>
+            <td>R$58,90</td>
+            <td>72095</td>
+            <td>19/10/2024</td>
+            <td><i class="bi bi-three-dots options-icon"></i></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="../images/lendas.png" alt="Game Thumbnail" class="me-2" width="50">
+                <div>
+                  <div>Lendas Urbanas</div>
+                  <small>Terror - Simulação</small>
+                </div>
+              </div>
+            </td>
+            <td>Débito</td>
+            <td>R$179,90</td>
+            <td>34567</td>
+            <td>01/10/2024</td>
+            <td><i class="bi bi-three-dots options-icon"></i></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="../images/guardioes.png" alt="Game Thumbnail" class="me-2" width="50">
+                <div>
+                  <div>Guardiões da Floresta</div>
+                  <small>RPG - Multijogador</small>
+                </div>
+              </div>
+            </td>
+            <td>Débito</td>
+            <td>R$130,00</td>
+            <td>09897</td>
+            <td>20/09/2024</td>
+            <td><i class="bi bi-three-dots options-icon"></i></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="../images/dandara.png" alt="Game Thumbnail" class="me-2" width="50">
+                <div>
+                   <div>Dandara</div>
+                  <small>Aventura - Plataforma</small>
+                </div>
+              </div>
+            </td>
+            <td>Pix</td>
+            <td>R$400,00</td>
+            <td>12345</td>
+            <td>10/09/2024</td>
+            <td><i class="bi bi-three-dots options-icon"></i></td>
+          </tr><tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="../images/saltimbancos.png" alt="Game Thumbnail" class="me-2" width="50">
+                <div>
+                  <div>Saltimbancos</div>
+                  <small>Aventura - Jogador Único</small>
+                </div>
+              </div>
+            </td>
+            <td>Débito</td>
+            <td>R$149,90</td>
+            <td>17878</td>
+            <td>01/08/2024</td>
+            <td><i class="bi bi-three-dots options-icon"></i></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="../images/iara.png" alt="Game Thumbnail" class="me-2" width="50">
+                <div>
+                  <div>Iara e o Canto das Águas</div>
+                  <small>Ação - Jogador Único</small>
+                </div>
+              </div>
+            </td>
+            <td>Débito</td>
+            <td>R$250,00</td>
+            <td>19835</td>
+            <td>10/07/2024</td>
+            <td><i class="bi bi-three-dots options-icon"></i></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="../images/zooba.png" alt="Game Thumbnail" class="me-2" width="50">
+                <div>
+                  <div>Zooba</div>
+                  <small>RPG - Estrateégia</small>
+                </div>
+              </div>
+            </td>
+            <td>Pix</td>
+            <td>R$99,90</td>
+            <td>15435</td>
+            <td>20/06/2024</td>
+            <td><i class="bi bi-three-dots options-icon"></i></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="../images/tiro.png" alt="Game Thumbnail" class="me-2" width="50">
+                <div>
+                  <div>Tiro e cangaço</div>
+                  <small>Tiro - Multijogador</small>
+                </div>
+              </div>
+            </td>
+            <td>Pix</td>
+            <td>R$78,00</td>
+            <td>12345</td>
+            <td>09/04/2024</td>
+            <td><i class="bi bi-three-dots options-icon"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
