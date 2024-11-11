@@ -132,6 +132,7 @@ display: flex;
 #email , 
 #senha  {
     align-self: stretch; 
+    width: 452px;
     height: 38px; 
     background: white; 
     border-radius: 7px; 
@@ -175,6 +176,8 @@ display: flex;
 }
 
 .botaoentrar {
+    height: 44px;
+    width: 452px;
     align-self: stretch; 
     padding-left: 66px; 
     padding-right: 66px; 
@@ -189,8 +192,7 @@ display: flex;
     display: inline-flex;
 }
 
-.jogaragora {
-    color: white; 
+.btn { 
     font-size: 16px; 
     font-family: Inter; 
     font-weight: 600; 
@@ -198,9 +200,12 @@ display: flex;
     line-height: 19px; 
     letter-spacing: 0.96px; 
     word-wrap: break-word;
+    
+    
 }
 
 .esqueceuasenha {
+    align-self: stretch;
     color: white;
     font-size: 16px;
     font-family: Inter;
@@ -211,6 +216,7 @@ display: flex;
 }
 
 .novouser {
+    align-self: stretch;
     color: white;
     font-size: 16px;
     font-family: Inter;
@@ -326,3 +332,6 @@ position: relative;
     height: 22px; 
     position: relative;
 }
+
+
+
