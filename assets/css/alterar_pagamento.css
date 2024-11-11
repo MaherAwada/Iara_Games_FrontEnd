@@ -36,6 +36,7 @@ body {
     --radio-gradient-roxo: linear-gradient(142deg, rgba(150,96,228,1) 0%, rgba(150,96,228,1) 20%, rgba(86,4,200,1) 49%);
 }
 
+    /*Nav Bar*/
 .navigation-bar {
     background-color: #180142;
     border-radius: 10px;
@@ -73,6 +74,7 @@ body {
     font-family: 'Press Start 2P', sans-serif;
 }
 
+    /*Conteúdo Principal*/
 .balance-display-box {
     background-color: #180142;
     color: #FFFFFF;
@@ -104,7 +106,6 @@ body {
 .user-menu-item {
     color: #340576;
     text-decoration: none;
-
     margin-bottom: 10px;
 }
 
@@ -155,34 +156,6 @@ body {
     background-color: transparent; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .funds-options {
     display: flex;
     flex-direction: column;
@@ -223,25 +196,7 @@ button {
     border: 1px solid var(--verde-200);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /*Rodapé*/
 .menufooter {
     color: #E0D0FB; 
     font-size: 14px; 
