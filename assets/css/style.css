@@ -1,9 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'inter', sans-serif;
+body {
+    background-color: #0E002F;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
+
 :root {
     --roxo-800: #0E002F;
     --roxo-700: #340576;
@@ -359,56 +359,61 @@ overflow: hidden;
 
 /* ----------- CSS MAHER -----------  */
 
-body {
-    background-color: #0E002F;
-    color: white;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    border: 1px solid var(--roxo-200);
-    border-radius: 15px;
-    width: 70%;
-    background-color: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px); 
-    margin: 0 auto;
-}
 
-nav ul {
-    display: flex;
-    list-style: none;
-    font-size: 14px;
-}
+    /*Nav Bar*/
+    .navigation-bar {
+        background-color: #180142;
+        border-radius: 15px;
+        width: 80%;
+        border: 1px solid var(--roxo-300);
 
-nav ul li {
-    margin-right: 20px;
-    font-size: 14px;
-}
-
-nav ul li a, .right-nav a {
-    color: white;
-    text-decoration: none;
+    }
     
-}
+    .navigation-link, .submit-game-button {
+        color: #FFFFFF;
+        font-size: 14px;
+        text-decoration: none;
+        height: 45px;
+    }
+    
+    .navigation-link {
+        color: #FFFFFF;
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        margin-right: 15px; 
+    }
+    
+    .navigation-item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .site-logo {
+        width: 150px;
+    }
+    
+    .dropdown-menu {
+        background-color: var(--roxo-100);
+        border: 1px solid var(--roxo-200);
+        width: 200px;
+        padding: 10px 15px;
+    }
+    
+    .user-menu-item {
+        color: #340576;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
 
-.right-nav a {
-    margin-left: 20px;
-    padding: 10px 20px;
-    font-size: 14px;
-}
+     
 
-.btn-envio {
-    border: 1px solid var(--roxo-200);
-    border-radius: 18px;
-    width: 10px;
-    background-color: #8441F1;
-}
+
+
+
+
+
 
 .header {
     background-image: url('../images/fundo.png');
@@ -416,10 +421,6 @@ nav ul li a, .right-nav a {
     background-position: center;
     height: 95vh;
     display: flex;
-    padding-top: 24px;
-    flex-direction: column;
-    align-items: center;
-    align-self: stretch;
     flex-direction: column;
 }
 
@@ -490,6 +491,10 @@ nav ul li a, .right-nav a {
     width: 90%;
     max-height: 900px;
 }
+
+
+
+
 
 .menufooter {
     color: #E0D0FB; 

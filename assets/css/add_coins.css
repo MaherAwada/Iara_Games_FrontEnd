@@ -34,14 +34,50 @@ body {
     --branco: #fff;
     --preto: #000;
     --radio-gradient-roxo: linear-gradient(142deg, rgba(150,96,228,1) 0%, rgba(150,96,228,1) 20%, rgba(86,4,200,1) 49%);
+
+    .btn {
+        padding: 10px 16px;
+        text-decoration: none;
+        border-radius: 28px;
+        border: 1px solid var(--roxo-400);
+        background: var(--radio-gradient-roxo);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600px;
+        line-height: 100%;
+        letter-spacing: 0.72px;
+        text-transform: uppercase;
+        color: var(--branco);
+    }
+    
+    .btn:hover {
+        opacity: 60%;
+    }
+    
+    .btn-outline {
+        padding: 10px 16px;
+        text-decoration: none;
+        border-radius: 28px;
+        border: 1px solid var(--roxo-400);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600px;
+        line-height: 100%;
+        letter-spacing: 0.72px;
+        text-transform: uppercase;
+        color: var(--branco);
+    }
+    
+    .btn-outline:hover {
+        opacity: 60%;
+    }
 }
 
     /*Nav Bar*/
 .navigation-bar {
     background-color: #180142;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 80%;
-
     border: 1px solid var(--roxo-300);
 }
 
@@ -49,6 +85,7 @@ body {
     color: #FFFFFF;
     font-size: 14px;
     text-decoration: none;
+    height: 45px;
 }
 
 .navigation-link {
@@ -68,11 +105,6 @@ body {
     width: 150px;
 }
 
-.coin-title {
-    margin-top: 20px;
-    font-family: 'Press Start 2P', sans-serif;
-}
-
 .dropdown-menu {
     background-color: var(--roxo-100);
     border: 1px solid var(--roxo-200);
@@ -86,52 +118,7 @@ body {
     margin-bottom: 10px;
 }
 
-.user-avatar {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-right: 5px;
-}
 
-.user-menu-toggle {
-    background-color: var(--roxo-600) ;
-    border: 1px solid var(--roxo-200);
-    color: #FFFFFF !important;
-    border-radius: 28px;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.user-menu-toggle .dropdown-arrow {
-    margin-left: 8px;
-    font-size: 14px;
-    color: #FFFFFF;
-}
-
-.submit-game-button {
-    background-color: var(--roxo-600);
-    border: 1px solid var(--roxo-200);
-    color: #FFFFFF;
-    border-radius: 28px;
-    padding: 10px 20px; 
-    font-size: 14px;
-}
-
-.submit-game-button:hover {
-    background-color: var(--roxo-600);
-    border-color: var(--roxo-200); 
-}
-
-.user-menu-toggle:hover {
-    background-color: var(--roxo-600);
-    border-color: var(--roxo-200); 
-}
-
-.user-menu-item:hover {
-    color: #340576; 
-    background-color: transparent; 
-}
 
     /*Conteúdo Principal*/
 .balance-display-box {
