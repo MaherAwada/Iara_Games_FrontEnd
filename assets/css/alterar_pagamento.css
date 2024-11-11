@@ -74,28 +74,6 @@ body {
     font-family: 'Press Start 2P', sans-serif;
 }
 
-    /*Conteúdo Principal*/
-.balance-display-box {
-    background-color: #180142;
-    color: #FFFFFF;
-    border-radius: 15px;
-    padding: 0px 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--roxo-300);
-    text-align: center;
-}
-
-.balance-display-box strong {
-    font-size: 1.3rem;
-}
-
-.balance-display-box span {
-    padding: 0px 8px 0px 0px;
-    font-size: 1.3rem;
-}
-
 .dropdown-menu {
     background-color: var(--roxo-100);
     border: 1px solid var(--roxo-200);
@@ -155,6 +133,30 @@ body {
     color: #340576; 
     background-color: transparent; 
 }
+
+    /*Conteúdo Principal*/
+.balance-display-box {
+    background-color: #180142;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 0px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--roxo-300);
+    text-align: center;
+}
+
+.balance-display-box strong {
+    font-size: 1.3rem;
+}
+
+.balance-display-box span {
+    padding: 0px 8px 0px 0px;
+    font-size: 1.3rem;
+}
+
+
 
 .funds-options {
     display: flex;
