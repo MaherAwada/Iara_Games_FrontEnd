@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+
+:root {
+    --roxo-800: #0E002F;
+    --roxo-700: #340576;
+    --roxo-600: #5604C8;
+    --roxo-500: #6C05FA;
+    --roxo-400: #8441F1;
+    --roxo-300: #A371F4;
+    --roxo-200: #C2A0F8;
+    --roxo-100: #E0D0FB; 
+
+    --verde-800: #111F00;
+    --verde-700: #396600;
+    --verde-600: #569900;
+    --verde-500: #81E500;
+    --verde-400: #A0FF27;
+    --verde-300: #C4FA7F;
+    --verde-200: #DFFEB9;
+    --verde-100: #F6FFEB;
+
+    --cinza-700: #232B34;
+    --cinza-600: #384552;
+    --cinza-500: #475062;
+    --cinza-400: #5B6474;
+    --cinza-300: #747F95;
+    --cinza-200: #9AA2B2;
+    --cinza-100: #E4EAF4;
+
+    --branco: #fff;
+    --preto: #000;
+    --radio-gradient-roxo: linear-gradient(142deg, rgba(150,96,228,1) 0%, rgba(150,96,228,1) 20%, rgba(86,4,200,1) 49%);
+}
+
+.registrologin{
+    width: 100%;
+}
+
+.fundo_login {
+    max-width: 100%;
+    background: linear-gradient(0deg, rgba(14, 0, 47, 0.30) 0%, rgba(14, 0, 47, 0.30) 100%);    
+}
+
+.menuloginexterno{
+    max-width: 100%;
+    padding-left: 30px; 
+    padding-right: 30px; 
+    padding-top: 50px; 
+    padding-bottom: 70px; 
+    left: 446px; 
+    top: 150px; 
+    position: absolute; 
+    background: radial-gradient(100.00% 100.00% , rgba(194, 160, 248, 0) 0%, rgba(86, 4, 200, 0) 100%), linear-gradient(0deg, rgba(132, 65, 241, 0.60) 0%, rgba(132, 65, 241, 0.60) 100%); 
+    border-radius: 15px; 
+    border: 1px #A371F4 solid; 
+    backdrop-filter: blur(14px); 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 62px; 
+    display: inline-flex;
+}
+
+.vector {
+    width: 330px; 
+    height: 48px; 
+
+}
+
+.containerlog {
+    max-width: 100%;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 32px; 
+    display: flex;
+}
+
+.containerlog1 {
+    align-self: stretch; 
+    height: 406px; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 32px; 
+    display: flex;
+}
+.containerlog2 {
+align-self: stretch; 
+height: 148px; 
+flex-direction: column; 
+justify-content: flex-start; 
+align-items: flex-start; 
+gap: 24px; 
+display: flex;
+}
+
+.containeremail {
+    align-self: stretch; 
+    height: 62px; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 12px; 
+    display: flex;
+
+}
+
+.seuemail{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+#email , 
+#senha  {
+    align-self: stretch; 
+    height: 38px; 
+    background: white; 
+    border-radius: 7px; 
+    border: 1px #D9D9D9 solid;
+}
+
+.containerlog01{
+    align-self: stretch; 
+    height: 62px; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 12px; 
+    display: flex;
+}
+
+.suasenha {
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+
+
+.olho{
+    width: 24px; 
+    height: 24px; 
+    position: relative;
+}
+
+.iconeolho {
+    width: 19.20px; 
+    height: 13.71px; 
+    left: 2.40px; 
+    top: 5.14px; 
+    position: absolute; 
+    border: 1px #999999 solid;
+}
+
+.botaoentrar {
+    align-self: stretch; 
+    padding-left: 66px; 
+    padding-right: 66px; 
+    padding-top: 16px; 
+    padding-bottom: 16px; 
+    background:radial-gradient(31.99% 25.45% at 41.18% 19.84%, #81E500 0%, #477F00 100%); 
+    border-radius: 28px; 
+    border: 1px #E0FFB8 solid; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: inline-flex;
+}
+
+.jogaragora {
+    color: white; 
+    font-size: 16px; 
+    font-family: Inter; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    line-height: 19px; 
+    letter-spacing: 0.96px; 
+    word-wrap: break-word;
+}
+
+.esqueceuasenha {
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.novouser {
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+
+.cadastre {
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+.containerlog02 {
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 16px; 
+    display: flex;
+}
+
+.opcaologin {
+    color: #C2A0F8;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+    .containerlog03 {
+        align-self: stretch; 
+        justify-content: flex-start; 
+        align-items: center; 
+        gap: 13px; 
+        display: inline-flex;
+    }
+
+    .botaog{
+        height: 34px;
+        width: 142px;
+        padding-left: 10px; 
+        padding-right: 10px; 
+        padding-top: 6px; 
+        padding-bottom: 6px; 
+        background: white; 
+        border-radius: 20px; 
+        border: 1px #D9D9D9 solid; 
+        justify-content: center; 
+        align-items: flex-end; 
+        gap: 10px; 
+        display: flex;
+    }
+
+    .gdegoogle {
+        width: 22px; 
+        height: 22px;
+    }
+
+    .botaof {
+        height: 34px;
+        width: 142px;
+        padding-left: 10px; 
+        padding-right: 10px; 
+        padding-top: 6px; 
+        padding-bottom: 6px; 
+        background: white; 
+        border-radius: 20px; 
+        border: 1px #D9D9D9 solid; 
+        justify-content: center; 
+        align-items: flex-end; 
+        gap: 10px; 
+        display: flex;
+        
+    }
+
+.botaof1 {
+width: 22px; 
+height: 22px; 
+position: relative;
+}
+
+.face {
+    width: 21.91px; 
+    height: 21.91px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+}
+
+.maca {
+    height: 34px;
+    width: 142px;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    padding-top: 6px; 
+    padding-bottom: 6px; 
+    background: white; 
+    border-radius: 20px; border: 1px #D9D9D9 solid; 
+    justify-content: center; 
+    align-items: flex-end; 
+    gap: 10px; 
+    display: flex;
+}
+
+.maca01 {
+    width: 18px; 
+    height: 22px; 
+    position: relative;
+}
