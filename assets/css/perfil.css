@@ -1,0 +1,104 @@
+@import url(style.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+.navigation-bar {
+    background-color: #180142;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid var(--roxo-300);
+}
+
+.navigation-link, .submit-game-button {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navigation-link {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-right: 15px; 
+}
+
+.navigation-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.site-logo {
+    width: 150px;
+}
+
+.coin-title {
+    margin-top: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.container-perfil {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-self: stretch;
+    border-radius: 0.9375rem;
+    border: 1px solid hsla(263, 86%, 60%, 1);
+    background: rgba(62, 3, 144, 0.20);
+}
+
+.form-control {
+    border: 1px solid #6C05FA;
+    background: #340576;
+}
+
+.form-label {
+    color #000;
+}
+
+.img-form-dados-pessoais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 3rem;
+}
+
+.form-img-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.img-perfil {
+    height: 10rem;
+    width: 10rem;
+    align-self: stretch;
+    border-radius: 11.5625rem;
+    border: 1px solid var(--radio-gradient-purple, #8441F1);
+}
+
+.form-cep p {
+    color: var(--roxo-300);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.5rem */
+}
+
+.form-select {
+    border: 1px solid #6C05FA;
+    background: #340576;
+    color: #fff;
+}
