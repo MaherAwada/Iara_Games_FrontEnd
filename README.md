@@ -1,8 +1,8 @@
 <h1 align="center">Projeto Iara Games</h1>
 
-<p align="center">Site para compra de jogos nacionais</p>
+<p align="center">Site para compra de jogos nacionais. Descubra os melhores jogos em um cenário 100% brasileiro</p>
 
-## Integrantes do Grupo
+## 🧑🏽 Desenvolvedores
 - Maher Ahmad Awada
 - Emanuel Barbosa da Silva
 - Traicy Bruna de Godoy
@@ -22,3 +22,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/FsonKHnaXn3TQTggTMVJBP/Iara-Games?node-id=5-21&t=f4c0T1WAsyKOYrZB-1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
+## Sobre a API utilizada
+
+## Recurso utilizado pela API
