@@ -1,6 +1,8 @@
 <h1 align="center">Projeto Iara Games</h1>
 
-<p align="center">Site para compra de jogos nacionais. Descubra os melhores jogos em um cenário 100% brasileiro</p>
+<p align="center">Site para compra de jogos nacionais. Descubra os melhores jogos em um cenário 100% brasileiro.</p>
+
+<img alt="license" src="./assets/images/fundo.png">
 
 ## 🧑🏽 Desenvolvedores
 - Maher Ahmad Awada
