@@ -1,9 +1,9 @@
 <h1 align="center">Projeto Iara Games</h1>
 
 <h2>Integrantes do grupo<h2>
-<li>Maher Ahmad Awada</li>
-<li>Emanuel Barbosa da Silva</li>
-<li>Traicy Bruna de Godoy</li>
-<li>Daniel Moraes Ferreira</li>
-<li>Joao Pedro Dantas de Carli</li>
+<p>Maher Ahmad Awada</p>
+<p>Emanuel Barbosa da Silva</p>
+<p>Traicy Bruna de Godoy</p>
+<p>Daniel Moraes Ferreira</p>
+<p>Joao Pedro Dantas de Carli</p>
 
