@@ -52,12 +52,14 @@ body {
         letter-spacing: 0.72px;
         text-transform: uppercase;
         color: var(--branco);
+        transition: all 0.3s ease;
     }
-    
+
     .btn:hover {
-        opacity: 60%;
+        opacity: 80%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    
+
     .btn-outline {
         padding: 10px 16px;
         text-decoration: none;
@@ -71,7 +73,7 @@ body {
         text-transform: uppercase;
         color: var(--branco);
     }
-    
+
     .btn-outline:hover {
         opacity: 60%;
     }
@@ -79,17 +81,13 @@ body {
 
 @media (max-width: 576px) {
     .card {
-      padding: 20px;
+        padding: 20px;
     }
     img {
-      width: 90%; /* Ajusta a logo em telas menores */
+        width: 90%; 
     }
-  }
-
-.btn {
-    transition: all 0.3s ease;
 }
-  
+
 ::placeholder {
     color: var(--cinza-300);
     opacity: 1;
@@ -98,19 +96,18 @@ body {
 a:hover {
     text-decoration: underline;
 }
-  
+
 .card {
-    border-radius: 1rem; 
-    background: radial-gradient(70.00% 70.00% , rgba(194, 160, 248, 0) 0%, rgba(86, 4, 200, 0) 100%), linear-gradient(0deg, rgba(132, 65, 241, 0.60) 0%, rgba(132, 65, 241, 0.60) 100%); 
-    border: 1px #A371F4 solid; 
+    border-radius: 1rem;
+    background: radial-gradient(70.00% 70.00% , rgba(194, 160, 248, 0) 0%, rgba(86, 4, 200, 0) 100%), linear-gradient(0deg, rgba(132, 65, 241, 0.60) 0%, rgba(132, 65, 241, 0.60) 100%);
+    border: 1px #A371F4 solid;
     border-radius: 15px;
-    backdrop-filter: blur(14px); 
+    backdrop-filter: blur(14px);
 }
 
 .form-check-label a{
     color: var(--branco);
 }
-
 
 img {
     width: 70%;
@@ -121,8 +118,7 @@ img {
     font-size: 14px;
     color: #fff;
 }
-  
+
 #feedback.d-none {
     display: none;
 }
-  
