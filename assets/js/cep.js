@@ -1,7 +1,7 @@
 document.getElementById("cep").addEventListener("blur", function () {
-    const cep = this.value.replace(/\D/g, ""); // Remove caracteres não numéricos
+    const cep = this.value.replace(/\D/g, "");
     if (cep.length === 8) {
-        fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        fetch(`viacep.com.br/ws/01001000/json/`)
             .then(response => {
                 if (!response.ok) throw new Error("CEP não encontrado.");
                 return response.json();
@@ -12,7 +12,7 @@ document.getElementById("cep").addEventListener("blur", function () {
                     return;
                 }
 
-                // Preenche os campos do formulário com os dados retornados
+            
                 document.getElementById("endereco").value = data.logradouro || "";
                 document.getElementById("bairro").value = data.bairro || "";
                 document.getElementById("cidade").value = data.localidade || "";
