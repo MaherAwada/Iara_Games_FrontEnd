@@ -2,7 +2,7 @@
 
 <p align="center">Site para compra de jogos nacionais. Descubra os melhores jogos em um cenário 100% brasileiro.</p>
 
-<img alt="license" src="./assets/images/fundo.png">
+<img alt="license" src="./assets/images/banner_readme.png">
 
 ## 🧑🏽 Desenvolvedores
 - Maher Ahmad Awada
