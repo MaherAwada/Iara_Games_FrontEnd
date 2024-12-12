@@ -8,8 +8,8 @@
     <!-- Linkando com o Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <!-- Linkando com o Javascript -->
-    <script typ="text/javaScript" src="../js/cep.js"></script>
+    <!-- Linkando com o JavaScript -->
+    <script defer src="../js/cep.js"></script>
     
     <!-- Linkando com a perfil.css -->
     <link rel="stylesheet" href="../css/perfil.css">
@@ -111,80 +111,81 @@
     <section class="container-perfil my-5">
         <h4>Meu endereço</h4>
 
-        <div class="form-cep">
+        <div class="form-cep"> 
             <form action="" class="form-inserir-cep">
                 <p>Insira seu CEP abaixo que procuraremos para você</p>
                 <div class="my-3">
-                    <label for="floatingInput" class="form-label">Cep</label>
-                    <input type="text" name="nome" id="ceptxt" class="form-control">
+                    <label for="floatingInput" class="form-label">CEP</label>
+                    <input type="text" name="cep" id="ceptxt" class="form-control" placeholder="Digite o CEP">
                 </div>
-                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" onclick="buscarEndereco()">Buscar CEP</button>
+                <button class="btn btn-outline-secondary" type="button" onclick="buscarEndereco()">Buscar CEP</button>
             </form>
-
+        
             <form action="" class="form-pessoal">
                 <div class="container-dados-perfil">
                     <div class="dados">
                         <div class="my-3">
-                        <label for="floatingInput" class="form-label">Endereço</label>
-                        <input type="text" name="nome" id="nome" class="form-control">
+                            <label for="nome" class="form-label">Endereço</label>
+                            <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Endereço">
                         </div>
-
+        
                         <div class="my-3">
-                        <label for="numero" class="form-label">Número</label>
-                        <input type="number" name="numero" id="numero" class="form-control">
+                            <label for="numero" class="form-label">Número</label>
+                            <input type="number" name="numero" id="numero" class="form-control" placeholder="Número">
                         </div>
-
+        
                         <div class="my-3">
-                        <label for="referencia" class="form-label">Referência</label>
-                        <input type="text" name="referencia" id="referencia" class="form-control">
+                            <label for="referencia" class="form-label">Referência</label>
+                            <input type="text" name="referencia" id="referencia" class="form-control" placeholder="Referência">
                         </div>
-                        
+        
                         <div class="row">
                             <div class="col">
-                            <label for="bairro" class="form-label">Bairro</label>
-                            <input type="text" name="bairro" id="bairro" class="form-control">
-                        </div>
-
-                            <div class="col">
-                            <label for="cidade" class="form-label">Cidade</label>
-                            <input type="text" name="cidade" id="cidade" class="form-control">
+                                <label for="bairro" class="form-label">Bairro</label>
+                                <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Bairro">
                             </div>
-                    </div>
+        
+                            <div class="col">
+                                <label for="cidade" class="form-label">Cidade</label>
+                                <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Cidade">
+                            </div>
+                        </div>
+        
                         <div class="col">
-                        <label for="estado" class="form-label">Estado</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Selecione</option>
-                            <option value="AC">AC</option>
-                            <option value="AL">AL</option>
-                            <option value="AM">AM</option>
-                            <option value="AP">AP</option>
-                            <option value="BA">BA</option>
-                            <option value="CE">CE</option>
-                            <option value="DF">DF</option>
-                            <option value="ES">ES</option>
-                            <option value="GO">GO</option>
-                            <option value="MA">MA</option>
-                            <option value="MG">MG</option>
-                            <option value="MS">MS</option>
-                            <option value="MT">MT</option>
-                            <option value="PA">PA</option>
-                            <option value="PB">PB</option>
-                            <option value="PE">PE</option>
-                            <option value="PI">PI</option>
-                            <option value="PR">PR</option>
-                            <option value="RJ">RJ</option>
-                            <option value="RN">RN</option>
-                            <option value="RO">RO</option>
-                            <option value="RR">RR</option>
-                            <option value="RS">RS</option>
-                            <option value="SC">SC</option>
-                            <option value="SE">SE</option>
-                            <option value="SP">SP</option>
-                            <option value="TO">TO</option>
-                        </select>
+                            <label for="estado" class="form-label">Estado</label>
+                            <select class="form-select" id="estado">
+                                <option selected>Selecione</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AM">AM</option>
+                                <option value="AP">AP</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MG">MG</option>
+                                <option value="MS">MS</option>
+                                <option value="MT">MT</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="PR">PR</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="RS">RS</option>
+                                <option value="SC">SC</option>
+                                <option value="SE">SE</option>
+                                <option value="SP">SP</option>
+                                <option value="TO">TO</option>
+                            </select>
                         </div>
                     </div>
-
+        
                     <div class="col-12 mt-4">
                         <button type="submit" class="btn btn-primary">Salvar Perfil</button>
                     </div>
