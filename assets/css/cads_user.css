@@ -150,12 +150,12 @@ h1 {
 }
 
 .form-container {
-    background: rgba(62, 3, 144, 0.2);
+    background: radial-gradient(--roxo-700);
     padding: 40px;
     border-radius: 15px;
     border: 1px solid #C2A0F8;
     max-width: 900px;
-    margin: auto;
+    margin: 40px;
 }
 
 h2 {
