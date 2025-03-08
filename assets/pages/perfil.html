@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+
+    <!-- Linkando com o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Linkando com o JavaScript -->
+    <script defer src="../js/cep.js"></script>
+    
+    <!-- Linkando com a perfil.css -->
+    <link rel="stylesheet" href="../css/perfil.css">
+
+<!-- Navbar -->
+<nav class="navigation-bar navbar-expand-lg mx-auto my-3 py-3">
+    <div class="container d-flex justify-content-between">
+        <ul class="navbar-nav d-flex align-items-center">
+            <li class="navigation-item mx-2">
+                <a class="navigation-link" href="#">CATEGORIAS</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="#">FAVORITOS</a>
+            </li>
+            <li class="navigation-item">
+                <a class="navigation-link" href="#">NOVOS</a>
+            </li>
+        </ul>
+        <a class="navbar-brand" href="../../index.html">
+            <img src="../images/logo.svg" alt="Iara Games" class="site-logo">
+        </a>
+        <ul class="navbar-nav d-flex align-items-center">
+            <li class="navigation-item">
+                <button class="btn submit-game-button"><a href="./cadjogos.html">ENVIAR MEU JOGO</a></button>
+            </li>
+            <li class="navigation-item dropdown">
+                <button class="btn user-menu-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../images/user.png" alt="User" class="user-avatar">
+                    <span class="dropdown-arrow"><i class="bi bi-chevron-down"></i></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                    <li><a class="user-menu-item" href="#">Perfil</a></li>
+                    <li><a class="user-menu-item" href="./historico.html">Histórico de compras</a></li>
+                    <li><a class="user-menu-item" href="#">Formas de pagamento</a></li>
+                    <li><a class="user-menu-item" href="./add_coins.html">Iara Coins</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="user-menu-item" href="./login.html">Sair</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+</head>
+
+<body>
+<!-- Section Perfil -->
+<section class="container container-fluid">
+        <h1 class="display-large">Perfil</h1>
+
+<!------------- Section Dados Pessoais ------------->
+    <section class="container-perfil my-3">
+        <h4 class="h4">Dados Pessoais</h4>
+        
+        <div class="img-form-dados-pessoais">
+            <form action="" class="form-img-perfil">
+                <img src="../images/img-perfil.png" alt="" class="img-perfil">
+                <div class="input-group">
+                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Enviar Imagem</button>
+            </form>
+    </div>
+
+
+            <form action="" class="form-pessoal">
+                <div class="container-dados-perfil">
+                    <div class="my-3">
+                    <label for="floatingInput" class="form-label">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" class="form-control">
+                    </div>
+
+                    <div class="my-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                        <label for="cpf" class="form-label">CPF</label>
+                        <input type="number" name="cpf" id="cpf" class="form-control">
+                        </div>
+
+                        <div class="col">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="tel" name="celular" id="celular" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                        <button type="submit" class="btn btn-primary">Salvar Perfil</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+    </section>
+
+
+<!------------- Section Meu enderenço  ------------->
+    <section class="container-perfil my-5">
+        <h4>Meu endereço</h4>
+
+        <div class="form-cep"> 
+            <form action="" class="form-inserir-cep">
+                <p>Insira seu CEP abaixo que procuraremos para você</p>
+                <div class="my-3">
+                    <label for="floatingInput" class="form-label">CEP</label>
+                    <input type="text" name="cep" id="ceptxt" class="form-control" placeholder="Digite o CEP">
+                </div>
+                <button class="btn btn-outline-secondary" type="button" onclick="buscarEndereco()">Buscar CEP</button>
+            </form>
+        
+            <form action="" class="form-pessoal">
+                <div class="container-dados-perfil">
+                    <div class="dados">
+                        <div class="my-3">
+                            <label for="nome" class="form-label">Endereço</label>
+                            <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Endereço">
+                        </div>
+        
+                        <div class="my-3">
+                            <label for="numero" class="form-label">Número</label>
+                            <input type="number" name="numero" id="numero" class="form-control" placeholder="Número">
+                        </div>
+        
+                        <div class="my-3">
+                            <label for="referencia" class="form-label">Referência</label>
+                            <input type="text" name="referencia" id="referencia" class="form-control" placeholder="Referência">
+                        </div>
+        
+                        <div class="row">
+                            <div class="col">
+                                <label for="bairro" class="form-label">Bairro</label>
+                                <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Bairro">
+                            </div>
+        
+                            <div class="col">
+                                <label for="cidade" class="form-label">Cidade</label>
+                                <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Cidade">
+                            </div>
+                        </div>
+        
+                        <div class="col">
+                            <label for="estado" class="form-label">Estado</label>
+                            <select class="form-select" id="estado">
+                                <option selected>Selecione</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AM">AM</option>
+                                <option value="AP">AP</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MG">MG</option>
+                                <option value="MS">MS</option>
+                                <option value="MT">MT</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="PR">PR</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="RS">RS</option>
+                                <option value="SC">SC</option>
+                                <option value="SE">SE</option>
+                                <option value="SP">SP</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 mt-4">
+                        <button type="submit" class="btn btn-primary">Salvar Perfil</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    </section>
+
+    <!------------- Section Alterar Senha  ------------->
+
+    <section class="container-perfil my-5">
+        <h4>Alterar Senha</h4>
+
+        <div class="form-cep">
+            <form action="" class="form-inserir-cep">
+                <p>Preencha apenas caso queira alterar a senha</p>
+
+            <form action="" class="form-pessoal">
+                <div class="container-dados-perfil">
+                    <div class="my-3">
+                    <label for="floatingInput" class="form-label">Senha Atual</label>
+                    <input type="password" name="senha-atual" id="senha-atual" class="form-control">
+                    </div>
+
+                    <div class="my-3">
+                    <label for="nova-senha" class="form-label">Nova Senha</label>
+                    <input type="password" name="nova-senha" id="nova-senha" class="form-control">
+                    </div>
+
+                    <div class="my-3">
+                    <label for="nova-senha" class="form-label">Repita a Nova Senha</label>
+                    <input type="password" name="nova-senha" id="nova-senha" class="form-control">
+                    </div>
+                    
+                    <div class="col-12 mt-4">
+                        <button type="submit" class="btn btn-primary">Alterar Senha</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </section>
+
+</section>
+
+
+
+
+<footer>
+    <div class="footerboxgeral">
+        <div class="footerbox1">
+            <div class="iconsleft0">
+                <img src="../images/Vector.png">
+                <div class="iconsleft">
+                    <div class="iconsleft1">
+                        <a href="whatsapp">
+                            <img src="../images/whatsapp 1.png" alt="logo whatsapp">
+                        </a>
+                        <div class="linkedin">
+                            <a href="">
+                            <img src="../images/linkedin 1.png" alt="logo linkedin">
+                            </a>
+                        </div>
+                        <div class="medium">
+                            <a href="">
+                                <img src="../images/medium 1.png" alt="logo medium">
+                            </a>
+                        </div>
+                        <div class="insta">
+                            <a href="">
+                                <img src="../images/instagram 1.png" alt="logo instagram">   
+                            </a>
+                        </div>
+                    </div>
+                    <div class="direitos">Feito no Brasil. Iara Games © 2024. Todos os direitos reservados.</div>
+                </div>
+            </div>
+            <div class="footerboxright">
+                <div class="footerbox">
+                    <div class="footercontainer">
+                        <div class="menutitulo">Jogos</div>
+                        <div class="menufooter1">
+                            <a href="" class="menufooter">Por categoria</a>
+                            <a href="" class="menufooter">Melhores da semana</a>
+                            <a href="" class="menufooter">Mais jogados</a>
+                            <a href="" class="menufooter" >Clássicos</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footercontainer1">
+                        <div class="footercontainer">
+                            <div class="menutitulo">Desenvolvedores</div>
+                            <div class="menufooter1">
+                                <a href="" class="menufooter">Rede &lt;dev/br&gt;</a>
+                                <a href="" class="menufooter">Trabalhe com a gente</a>
+                                <a href="" class="menufooter">Contrate um &lt;dev/&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footercontainer">
+                        <div class="menutitulo">Recursos</div>
+                        <div class="menufooter1">
+                            <a href="" class="menufooter">Documentação </a>
+                        </div>
+                    </div>
+                    <div class="footercontainer">
+                        <div class="menutitulo">Institucional</div>
+                        <div class="menufooter1">
+                            <a href="" class="menufooter">Sobre</a>
+                            <a href="" class="menufooter">Contatos</a>
+                            <a href="" class="menufooter">Carreira</a>
+                            <a href="" class="menufooter">Política de privacidade</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="idioma">
+                    <div class="br">🇧🇷</div>
+                    <div class="idiomabr">Português (Brasil)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<!-- Linkando com o JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
