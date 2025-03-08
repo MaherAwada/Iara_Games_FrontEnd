@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Usuário</title>
+    <title>Editar Usuário</title>
     
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/cads_user.css">
+    <link rel="stylesheet" href="../css/edit_user.css">
 
     <!-- Linkando com o JavaScript -->
-    <script defer src="../js/cads_user.js"></script>
+    <script defer src="../js/edit_user.js"></script>
 </head>
 <body>
 <!-- Navbar -->
@@ -53,24 +53,29 @@
 </nav>
 
 <main class="main-content">
-    <h2>Cadastrar Usuário</h2>
+    <h2>Editar Usuário</h2>
     <section class="form-container mx-auto">
         <h3>Dados Pessoais</h3>
-        <form id="cadastroForm">
+        <form id="editarForm">
             <label for="nome">Nome</label>
-            <input type="text" id="nome" class="form-control" placeholder="Digite o nome" required>
-
+            <input type="text" id="nome" class="form-control" placeholder="Digite o nome">
+            
             <label for="email">E-mail</label>
-            <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
+            <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail">
 
             <label for="senha">Senha</label>
-            <input type="password" id="senha" class="form-control" placeholder="Digite sua senha" required>
+            <input type="password" id="senha" class="form-control" placeholder="Digite sua senha">
 
             <div class="form-actions d-flex justify-content-between">
-                <button type="submit" class="btn-success">Cadastrar Usuário</button>
-                <button type="button" class="btn-outline" onclick="window.location.href='edit_user.html'">Consultar usuários</button>
+                <button type="button" class="btn-success" onclick="salvarEdicao()">Salvar Edição</button>
+                <button type="button" class="btn-outline" onclick="carregarUsuarios()">Consultar usuários</button>
             </div>
         </form>
+    </section>
+
+    <h3>Perfis de Usuários</h3>
+    <section class="profile-container mx-auto">
+        <ul id="usuariosLista" class="list-group"></ul>
     </section>
 </main>
 
