@@ -6,12 +6,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/cadjogos.css">
 
-    <!-- Links das fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+10&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <!-- Links das fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+10&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     
-    <title>Cadastrar jogos</title>
+    <title>Editar Jogo</title>
 </head>
 <body>
 
@@ -54,43 +54,45 @@
     </nav>
 
     <section class="titlecad">
-        <h1 class="titulo">Cadastrar Jogos</h1>
+        <h1 class="titulo">Editar Jogo</h1>
 
         <section class="main cadastrogame">
             <h2>Dados do Jogo</h2>
-            <form id="gameForm">
+            <form id="editGameForm">
                 <div class="info-jogo">
                     <div class="my-3">
-                        <label for="gameName" class="form-label">Nome</label>
-                        <input type="text" name="nome" id="gameName" class="form-control" placeholder="Digite o nome do jogo" required>
+                        <label for="editGameName" class="form-label">Nome</label>
+                        <input type="text" id="editGameName" class="form-control" required>
                     </div>
 
                     <div class="my-3">
-                        <label for="gameGenre" class="form-label">Gênero</label>
-                        <input type="text" name="genero" id="gameGenre" class="form-control" placeholder="Digite o gênero do jogo" required>
+                        <label for="editGameGenre" class="form-label">Gênero</label>
+                        <input type="text" id="editGameGenre" class="form-control" required>
                     </div>
 
                     <div class="data">
-                        <label for="releaseDate">Data de Lançamento</label>
-                        <input type="date" id="releaseDate" name="date" class="form-control" required>
+                        <label for="editReleaseDate">Data de Lançamento</label>
+                        <input type="date" id="editReleaseDate" class="form-control" required>
                     </div>
 
                     <div class="prod">
-                        <label for="gameProducer" class="form-label">Nome da Produtora</label>
-                        <input type="text" name="produtora" id="gameProducer" class="form-control" placeholder="Digite o nome da produtora" required>
+                        <label for="editGameProducer" class="form-label">Nome da Produtora</label>
+                        <input type="text" id="editGameProducer" class="form-control" required>
+                    </div>
+
+                    <div class="my-3">
+                        <label for="gameImage" class="form-label">Imagem do Jogo</label>
+                        <input type="file" id="gameImage" class="form-control">
                     </div>
 
                     <div class="bnts">
-                        <button id="registerButton" type="submit" class="btn-primary">Cadastrar</button>
-                        <button id="consultButton" class="btn-secondary">Consultar Jogos</button>
+                        <button type="submit" class="btn-primary">Salvar Alterações</button>
+                        <a href="/assets/pages/jogos_listados.html" class="btn-secondary">Cancelar</a>
                     </div>
-
-                    <p id="successMessage" style="display: none; color: green; font-weight: bold;">Jogo cadastrado com sucesso!</p>
                 </div>
             </form>
         </section>
     </section>
-    
 
     <footer>
         <div class="footerboxgeral">
@@ -124,9 +126,6 @@
         </div>
     </footer>
 
-    <script src="../js/cadjogos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="/assets/js/edit_jogos.js"></script>
 </body>
 </html>
