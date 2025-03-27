@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/cads_user.css">
 
     <!-- Linkando com o JavaScript -->
-    <script defer src="../js/cads_user.js"></script>
+    <script defer src="../js/usuario.js"></script>
 </head>
 <body>
 <!-- Navbar -->
@@ -32,7 +32,7 @@
         </a>
         <ul class="navbar-nav d-flex align-items-center">
             <li class="navigation-item">
-                <button class="btn submit-game-button">ENVIAR MEU JOGO</button>
+                <a href="/assets/pages/cadjogos.html" class="btn submit-game-button">ENVIAR MEU JOGO</a>
             </li>
             <li class="navigation-item dropdown">
                 <button class="btn user-menu-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,13 +58,13 @@
         <h3>Dados Pessoais</h3>
         <form id="cadastroForm">
             <label for="nome">Nome</label>
-            <input type="text" id="nome" class="form-control" placeholder="Digite o nome" required>
+            <input type="text" id="userName" class="form-control" placeholder="Digite o nome" required>
 
             <label for="email">E-mail</label>
-            <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
+            <input type="email" id="userEmail" class="form-control" placeholder="Digite seu e-mail" required>
 
             <label for="senha">Senha</label>
-            <input type="password" id="senha" class="form-control" placeholder="Digite sua senha" required>
+            <input type="password" id="userPassword" class="form-control" placeholder="Digite sua senha" required>
 
             <div class="form-actions d-flex justify-content-between">
                 <button type="submit" class="btn-success">Cadastrar Usuário</button>
@@ -72,38 +72,25 @@
             </div>
         </form>
     </section>
+        <section class="mt-5">
+            <h3>Usuários Cadastrados</h3>
+            <ul id="usuariosLista" class="list-group mt-3"></ul>
+        </section>
+        
 </main>
 
-        <footer class="footer">
-            <div class="logo">
-            <a href="" >
-                <img src="../images/Vector.png" alt="logo iara">
-            </a>
-            </div>
-            <div class="social-icons d-flex justify-content-center gap-3">
-                    <div class="icon">
-                        <a href="whatsapp">
-                            <img src="../images/whatsapp 1.png" alt="logo whatsapp">
-                        </a>
-                    </div>    
-                    <div class="icon">
-                        <a href="linkedin">
-                            <img src="../images/linkedin 1.png" alt="logo linkedin">
-                        </a>  
-                    </div>
-                    <div class="icon">
-                        <a href="medium">
-                            <img src="../images/medium 1.png" alt="logo medium">
-                        </a> 
-                    </div>
-                    <div class="icon">
-                        <a href="medium">
-                            <img src="../images/instagram 1.png" alt="logo instagram">
-                        </a> 
-                    </div>
-            </div>
-            <p>Feito no Brasil. Iara Games © 2024. Todos os direitos reservados.</p>
-        </footer>
+<footer class="footer mt-5 py-4 text-center">
+    <div class="logo mb-3">
+        <a href="#"><img src="../images/Vector.png" alt="logo iara"></a>
+    </div>
+    <div class="social-icons d-flex justify-content-center gap-3 mb-2">
+        <a href="whatsapp"><img src="../images/whatsapp 1.png" alt="logo whatsapp"></a>
+        <a href="linkedin"><img src="../images/linkedin 1.png" alt="logo linkedin"></a>
+        <a href="medium"><img src="../images/medium 1.png" alt="logo medium"></a>
+        <a href="instagram"><img src="../images/instagram 1.png" alt="logo instagram"></a>
+    </div>
+    <p>Feito no Brasil. Iara Games © 2024. Todos os direitos reservados.</p>
+</footer>
     </div>
 
     <!-- Bootstrap JS -->

@@ -1,42 +1,56 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const editForm = document.getElementById("editGameForm");
-    const editIndex = localStorage.getItem("editIndex");
+// edit_jogos.js - atualizado para usar API REST em vez de localStorage
 
-    if (editIndex === null) {
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("editGameForm");
+    const id = localStorage.getItem("editJogoId");
+
+    if (!id) {
+        alert("Jogo não encontrado para edição.");
         window.location.href = "jogos_listados.html";
         return;
     }
 
-    let games = JSON.parse(localStorage.getItem("games")) || [];
-    let game = games[editIndex];
-
-    document.getElementById("editGameName").value = game.name;
-    document.getElementById("editGameGenre").value = game.genre;
-    document.getElementById("editReleaseDate").value = game.releaseDate;
-    document.getElementById("editGameProducer").value = game.producer;
-
-    editForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        game.name = document.getElementById("editGameName").value;
-        game.genre = document.getElementById("editGameGenre").value;
-        game.releaseDate = document.getElementById("editReleaseDate").value;
-        game.producer = document.getElementById("editGameProducer").value;
-
-        const fileInput = document.getElementById("gameImage");
-        if (fileInput.files.length > 0) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                game.image = e.target.result;
-                games[editIndex] = game;
-                localStorage.setItem("games", JSON.stringify(games));
-                window.location.href = "jogos_listados.html";
-            };
-            reader.readAsDataURL(fileInput.files[0]);
-        } else {
-            games[editIndex] = game;
-            localStorage.setItem("games", JSON.stringify(games));
+    fetch(`http://localhost:8080/jogos/${id}`)
+        .then(res => res.json())
+        .then(jogo => {
+            document.getElementById("gameName").value = jogo.name;
+            document.getElementById("gameGenre").value = jogo.genre;
+            document.getElementById("releaseDate").value = jogo.releaseDate;
+            document.getElementById("gameProducer").value = jogo.producer;
+            document.getElementById("gameImage").value = jogo.image || "";
+        })
+        .catch(() => {
+            alert("Erro ao carregar jogo para edição.");
             window.location.href = "jogos_listados.html";
-        }
+        });
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const jogoAtualizado = {
+            name: document.getElementById("gameName").value,
+            genre: document.getElementById("gameGenre").value,
+            releaseDate: document.getElementById("releaseDate").value,
+            producer: document.getElementById("gameProducer").value,
+            image: document.getElementById("gameImage").value || ""
+        };
+
+        fetch(`http://localhost:8080/jogos/${id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(jogoAtualizado)
+        })
+            .then(response => {
+                if (!response.ok) throw new Error("Erro ao atualizar jogo");
+                alert("Jogo atualizado com sucesso!");
+                localStorage.removeItem("editJogoId");
+                window.location.href = "jogos_listados.html";
+            })
+            .catch(error => {
+                console.error("Erro ao atualizar:", error);
+                alert("Erro ao atualizar o jogo.");
+            });
     });
 });

@@ -1,3 +1,6 @@
+const url = "https://localhost:8080/jogos"
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("gameForm");
     const gameListContainer = document.getElementById("gameList");

@@ -1,61 +1,78 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     carregarUsuarios();
+
+    document.getElementById("editarForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        salvarEdicao();
+    });
 });
 
 function carregarUsuarios() {
-    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-    const lista = document.getElementById('usuariosLista');
-    lista.innerHTML = '';
+    fetch("http://localhost:8080/usuarios")
+        .then(res => res.json())
+        .then(usuarios => {
+            const lista = document.getElementById("usuariosLista");
+            lista.innerHTML = "";
 
-    if (usuarios.length === 0) {
-        lista.innerHTML = '<p>Nenhum usuário cadastrado.</p>';
-        return;
-    }
-
-    usuarios.forEach((usuario, index) => {
-        const item = document.createElement('li');
-        item.classList.add('list-group-item');
-        item.innerHTML = `
-            <p><strong>Nome:</strong> ${usuario.nome}</p>
-            <p><strong>Email:</strong> ${usuario.email}</p>
-            <p><strong>Senha:</strong> ${usuario.senha}</p>
-            <button class="btn btn-warning btn-sm" onclick="preencherFormulario(${index})">Editar</button>
-            <button class="btn btn-danger btn-sm" onclick="deletarUsuario(${index})">Deletar</button>
-        `;
-        lista.appendChild(item);
-    });
+            usuarios.forEach(usuario => {
+                const item = document.createElement("li");
+                item.classList.add("list-group-item");
+                item.innerHTML = `
+                    <p><strong>Nome:</strong> ${usuario.name}</p>
+                    <p><strong>Email:</strong> ${usuario.email}</p>
+                    <p><strong>Senha:</strong> ${usuario.password}</p>
+                    <button class="btn btn-warning btn-sm" onclick='preencherFormulario(${JSON.stringify(usuario)})'>Editar</button>
+                    <button class="btn btn-danger btn-sm" onclick='deletarUsuario(${usuario.id})'>Excluir</button>
+                `;
+                lista.appendChild(item);
+            });
+        });
 }
 
-function preencherFormulario(index) {
-    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-    document.getElementById('nome').value = usuarios[index].nome;
-    document.getElementById('email').value = usuarios[index].email;
-    document.getElementById('senha').value = usuarios[index].senha;
-    document.getElementById('editarForm').setAttribute('data-index', index);
+function preencherFormulario(usuario) {
+    document.getElementById("editUserName").value = usuario.name;
+    document.getElementById("editUserEmail").value = usuario.email;
+    document.getElementById("editUserPassword").value = usuario.password;
+    document.getElementById("editarForm").setAttribute("data-id", usuario.id);
 }
 
 function salvarEdicao() {
-    const index = document.getElementById('editarForm').getAttribute('data-index');
-    if (index === null) return alert("Selecione um usuário para editar.");
-    
-    let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+    const id = document.getElementById("editarForm").getAttribute("data-id");
 
-    usuarios[index] = {
-        nome: document.getElementById('nome').value,
-        email: document.getElementById('email').value,
-        senha: document.getElementById('senha').value
+    const userAtualizado = {
+        name: document.getElementById("editUserName").value,
+        email: document.getElementById("editUserEmail").value,
+        password: document.getElementById("editUserPassword").value
     };
 
-    localStorage.setItem('usuarios', JSON.stringify(usuarios));
-    carregarUsuarios();
-    document.getElementById('editarForm').reset();
-    document.getElementById('editarForm').removeAttribute('data-index'); 
-    alert("Usuário atualizado com sucesso!");
+    fetch(`http://localhost:8080/usuarios/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(userAtualizado)
+    })
+        .then(response => {
+            if (!response.ok) throw new Error("Erro ao atualizar");
+            alert("Usuário atualizado com sucesso!");
+            document.getElementById("editarForm").reset();
+            document.getElementById("editarForm").removeAttribute("data-id");
+            carregarUsuarios();
+        })
+        .catch(error => {
+            console.error("Erro ao atualizar:", error);
+        });
 }
 
-function deletarUsuario(index) {
-    let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-    usuarios.splice(index, 1);
-    localStorage.setItem('usuarios', JSON.stringify(usuarios));
-    carregarUsuarios();
+function deletarUsuario(id) {
+    fetch(`http://localhost:8080/usuarios/${id}`, {
+        method: "DELETE"
+    })
+        .then(response => {
+            if (!response.ok) throw new Error("Erro ao deletar");
+            carregarUsuarios();
+        })
+        .catch(error => {
+            console.error("Erro ao deletar:", error);
+        });
 }
