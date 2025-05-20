@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cadjogos.css">
+
+        <!-- Links das fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+10&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <title>Editar Jogo</title>
+</head>
+<body>
+
+    <nav class="navigation-bar navbar-expand-lg mx-auto my-3 py-3 ">
+        <div class="container d-flex justify-content-between">
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="navigation-item mx-2">
+                    <a class="navigation-link" href="#">CATEGORIAS</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="../pages/favoritos.html">FAVORITOS</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">NOVOS</a>
+                </li>
+            </ul>
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../images/logo.svg" alt="Iara Games" class="site-logo">
+            </a>
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="navigation-item">
+                    <a href="/assets/pages/cadjogos.html" class="btn submit-game-button">ENVIAR MEU JOGO</a>
+                </li>
+                <li class="navigation-item dropdown">
+                    <button class="btn user-menu-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../images/user.png" alt="User" class="user-avatar">
+                        <span class="dropdown-arrow"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="user-menu-item" href="#">Perfil</a></li>
+                        <li><a class="user-menu-item" href="./historico.html">Histórico de compras</a></li>
+                        <li><a class="user-menu-item" href="#">Formas de pagamento</a></li>
+                        <li><a class="user-menu-item" href="./add_coins.html">Iara Coins</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="user-menu-item" href="./login.html">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="titlecad">
+        <h1 class="titulo">Editar Jogo</h1>
+
+        <section class="main cadastrogame">
+            <h2>Dados do Jogo</h2>
+            <form id="editGameForm">
+                <div class="info-jogo">
+                    <div class="my-3">
+                        <label for="editGameName" class="form-label">Nome</label>
+                        <input type="text" id="editGameName" class="form-control" required>
+                    </div>
+
+                    <div class="my-3">
+                        <label for="editGameGenre" class="form-label">Gênero</label>
+                        <input type="text" id="editGameGenre" class="form-control" required>
+                    </div>
+
+                    <div class="data">
+                        <label for="editReleaseDate">Data de Lançamento</label>
+                        <input type="date" id="editReleaseDate" class="form-control" required>
+                    </div>
+
+                    <div class="prod">
+                        <label for="editGameProducer" class="form-label">Nome da Produtora</label>
+                        <input type="text" id="editGameProducer" class="form-control" required>
+                    </div>
+
+                    <div class="my-3">
+                        <label for="gameImage" class="form-label">Imagem do Jogo</label>
+                        <input type="text" id="gameImage" class="form-control">
+                    </div>
+
+                    <div class="bnts">
+                        <button type="submit" class="btn-primary">Salvar Alterações</button>
+                        <a href="/assets/pages/jogos_listados.html" class="btn-secondary">Cancelar</a>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <div class="footerboxgeral">
+            <div class="footerbox1">
+                <div class="iconsleft0">
+                    <img src="../images/Vector.png">
+                    <div class="iconsleft">
+                        <div class="iconsleft1">
+                            <a href="whatsapp">
+                                <img src="../images/whatsapp 1.png" alt="logo whatsapp">
+                            </a>
+                            <div class="linkedin">
+                                <a href="">
+                                <img src="../images/linkedin 1.png" alt="logo linkedin">
+                                </a>
+                            </div>
+                            <div class="medium">
+                                <a href="">
+                                    <img src="../images/medium 1.png" alt="logo medium">
+                                </a>
+                            </div>
+                            <div class="insta">
+                                <a href="">
+                                    <img src="../images/instagram 1.png" alt="logo instagram">   
+                                </a>
+                            </div>
+                        </div>
+                        <div class="direitos">Feito no Brasil. Iara Games © 2024. Todos os direitos reservados.</div>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/edit_jogos.js"></script>
+</body>
+</html>

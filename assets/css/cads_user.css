@@ -1,0 +1,246 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #0E002F;
+    color: white;
+    text-align: center;
+}
+
+:root {
+    --roxo-800: #0E002F;
+    --roxo-700: #340576;
+    --roxo-600: #5604C8;
+    --roxo-500: #6C05FA;
+    --roxo-400: #8441F1;
+    --roxo-300: #A371F4;
+    --roxo-200: #C2A0F8;
+    --roxo-100: #E0D0FB;
+
+    --verde-800: #111F00;
+    --verde-700: #396600;
+    --verde-600: #569900;
+    --verde-500: #81E500;
+    --verde-400: #A0FF27;
+    --verde-300: #C4FA7F;
+    --verde-200: #DFFEB9;
+    --verde-100: #F6FFEB;
+
+    --cinza-700: #232B34;
+    --cinza-600: #384552;
+    --cinza-500: #475062;
+    --cinza-400: #5B6474;
+    --cinza-300: #747F95;
+    --cinza-200: #9AA2B2;
+    --cinza-100: #E4EAF4;
+
+    --branco: #fff;
+    --preto: #000;
+    --radio-gradient-roxo: linear-gradient(142deg, rgba(150,96,228,1) 0%, rgba(150,96,228,1) 20%, rgba(86,4,200,1) 49%);
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* Navbar */
+
+.btn {
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 28px;
+    border: 1px solid var(--roxo-400);
+    background: var(--radio-gradient-roxo);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600px;
+    line-height: 100%;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    color: var(--branco);
+}
+
+.btn:hover {
+    opacity: 60%;
+}
+
+.btn-outline {
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 28px;
+    border: 1px solid var(--roxo-400);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600px;
+    line-height: 100%;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    color: var(--branco);
+}
+
+.btn-outline:hover {
+    opacity: 60%;
+}
+
+
+
+.navigation-bar {
+background-color: #180142;
+border-radius: 10px;
+width: 80%;
+margin-top: 20px;
+padding: 10px 20px;
+border: 1px solid var(--roxo-300);
+}
+
+.navigation-link, .submit-game-button {
+color: #FFFFFF;
+font-size: 14px;
+text-decoration: none;
+height: 45px;
+}
+
+.navigation-link {
+color: #FFFFFF;
+font-size: 14px;
+text-decoration: none;
+letter-spacing: 1px;
+margin-right: 15px; 
+}
+
+.navigation-item {
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.site-logo {
+margin-top: 10px;
+}
+
+.dropdown-menu {
+background-color: var(--roxo-100);
+border: 1px solid var(--roxo-200);
+width: 200px;
+padding: 10px 15px;
+}
+
+.user-menu-item {
+color: #340576;
+text-decoration: none;
+margin-bottom: 10px;
+}
+
+/* Main Content */
+.main-content {
+    width: 1016px;
+    margin: 80px auto;
+    text-align: left;
+}
+
+h1 {
+    font-size: 54px;
+    font-family: "Jersey 10", sans-serif;
+    margin-left: 60px;
+}
+
+.form-container {
+    background: radial-gradient(--roxo-700);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #C2A0F8;
+    max-width: 900px;
+    margin: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 16px;
+    color: #E0D0FB;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    background: #340576;
+    border-radius: 8px;
+    border: 1px solid #6C05FA;
+    color: #E0D0FB;
+    outline: none;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-success {
+    padding: 16px 32px;
+    background: radial-gradient(circle, #81E500 0%, #477F00 100%);
+    border: 1px solid #E0FFB8;
+    border-radius: 66px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-outline {
+    padding: 16px 32px;
+    border: 1px solid #E0FFB8;
+    border-radius: 66px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background: var(--roxo-700);
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    height: 392px;
+    background: #5604C8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 73px;
+    height: 91px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+}
+
+.footer p {
+    font-size: 12px;
+    margin-top: 24px;
+}

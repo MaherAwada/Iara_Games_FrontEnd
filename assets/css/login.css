@@ -1,0 +1,124 @@
+body {
+    background-image: url(../images/fundo_login.png);
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+:root {
+    --roxo-800: #0E002F;
+    --roxo-700: #340576;
+    --roxo-600: #5604C8;
+    --roxo-500: #6C05FA;
+    --roxo-400: #8441F1;
+    --roxo-300: #A371F4;
+    --roxo-200: #C2A0F8;
+    --roxo-100: #E0D0FB;
+
+    --verde-800: #111F00;
+    --verde-700: #396600;
+    --verde-600: #569900;
+    --verde-500: #81E500;
+    --verde-400: #A0FF27;
+    --verde-300: #C4FA7F;
+    --verde-200: #DFFEB9;
+    --verde-100: #F6FFEB;
+
+    --cinza-700: #232B34;
+    --cinza-600: #384552;
+    --cinza-500: #475062;
+    --cinza-400: #5B6474;
+    --cinza-300: #747F95;
+    --cinza-200: #9AA2B2;
+    --cinza-100: #E4EAF4;
+
+    --branco: #fff;
+    --preto: #000;
+    --radio-gradient-roxo: linear-gradient(142deg, rgba(150,96,228,1) 0%, rgba(150,96,228,1) 20%, rgba(86,4,200,1) 49%);
+
+    .btn {
+        padding: 10px 16px;
+        text-decoration: none;
+        border-radius: 28px;
+        border: 1px solid var(--verde-200);
+        background: var(--verde-400);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600px;
+        line-height: 100%;
+        letter-spacing: 0.72px;
+        text-transform: uppercase;
+        color: var(--branco);
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        opacity: 80%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-outline {
+        padding: 10px 16px;
+        text-decoration: none;
+        border-radius: 28px;
+        border: 1px solid var(--verde-200);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600px;
+        line-height: 100%;
+        letter-spacing: 0.72px;
+        text-transform: uppercase;
+        color: var(--branco);
+    }
+
+    .btn-outline:hover {
+        opacity: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 20px;
+    }
+    img {
+        width: 90%; 
+    }
+}
+
+::placeholder {
+    color: var(--cinza-300);
+    opacity: 1;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    border-radius: 1rem;
+    background: radial-gradient(70.00% 70.00% , rgba(194, 160, 248, 0) 0%, rgba(86, 4, 200, 0) 100%), linear-gradient(0deg, rgba(132, 65, 241, 0.60) 0%, rgba(132, 65, 241, 0.60) 100%);
+    border: 1px #A371F4 solid;
+    border-radius: 15px;
+    backdrop-filter: blur(14px);
+}
+
+.form-check-label a{
+    color: var(--branco);
+}
+
+img {
+    width: 70%;
+}
+
+#feedback {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#feedback.d-none {
+    display: none;
+}
