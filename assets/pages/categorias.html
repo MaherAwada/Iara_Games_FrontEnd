@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/categorias.css">
+    <!-- Links das fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+10&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Categorias</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navigation-bar navbar-expand-lg mx-auto my-3 py-3 ">
+        <div class="container d-flex justify-content-between">
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="navigation-item mx-2">
+                    <a class="navigation-link" href="#">CATEGORIAS</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="../pages/favoritos.html#">FAVORITOS</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">NOVOS</a>
+                </li>
+            </ul>
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../images/logo.svg" alt="Iara Games" class="site-logo">
+            </a>
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="navigation-item">
+                    <button class="btn submit-game-button"><a href="../pages/cadjogos.html">ENVIAR MEU JOGO</a></button>
+                </li>
+                <li class="navigation-item dropdown">
+                    <button class="btn user-menu-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../images/user.png" alt="User" class="user-avatar">
+                        <span class="dropdown-arrow"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="user-menu-item" href="#">Perfil</a></li>
+                        <li><a class="user-menu-item" href="./historico.html">Histórico de compras</a></li>
+                        <li><a class="user-menu-item" href="#">Formas de pagamento</a></li>
+                        <li><a class="user-menu-item" href="./add_coins.html">Iara Coins</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="user-menu-item" href="./login.html">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- fim da Navbar -->
+
+    <!-- Container principal -->
+    <div class="container-principal">
+
+        <!-- Categoria Ação -->
+        <div class="categorias">
+            <h2>Ação</h2>
+            <div class="container-doscards">
+                <div class="card-jogosfav">
+                    <img src="../images/img-card01-jogos-imperdiveis.svg" alt="Imagem do jogo Iara e o Canto da Floresta" class="img-card-jogos-imperdiveis">
+                    <div class="content-card-jogos-imperdiveis">
+                        <div class="text-card-jogos-imperdiveis">
+                            <p class="tag-special">NOVO JOGO</p>
+                            <div class="titulo-e-dev-jogos-imperdiveis">
+                                <p class="subtitle-large">Iara e o Canto das Águas</p>
+                                <p class="body-small">Desenvolvido por Yara Inc.</p>
+                                <p class="body-regular">Um jogo imersivo inspirado na lenda da Iara, que mistura exploração e narrativa.</p>
+                                <div class="tags-jogos-imperdiveis">
+                                    <p class="tag-small">Ação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Simulação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Jogador único</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botoes-jogos-imperdiveis">
+                            <a href="" class="btn">Jogar agora</a>
+                            <a href="" class="btn-outline">Grátis</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-jogosfav">
+                    <img src="../images/img-card02-jogos-imperdiveis.svg" alt="Imagem do jogo Guardiões da Floresta" class="img-card-jogos-imperdiveis">
+                    <div class="content-card-jogos-imperdiveis">
+                        <div class="text-card-jogos-imperdiveis">
+                            <p class="tag-regular">COLEÇÃO AMAZÔNIA</p>
+                            <div class="titulo-e-dev-jogos-imperdiveis">
+                                <p class="subtitle-large">Guardiões da Floresta</p>
+                                <p class="body-small">Desenvolvido por Yara Inc.</p>
+                                <p class="body-regular">Um RPG ambientado nas florestas brasileiras, onde você luta contra forças místicas.</p>
+                                <div class="tags-jogos-imperdiveis">
+                                    <p class="tag-small">Ação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Simulação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Jogador único</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botoes-jogos-imperdiveis">
+                            <a href="" class="btn">Jogar agora</a>
+                            <a href="" class="btn-outline">R$ 20,99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-jogosfav">
+                    <img src="../images/img-card03-jogos-imperdiveis.svg" alt="Imagem do jogo Lendas Urbanas" class="img-card-jogos-imperdiveis">
+                    <div class="content-card-jogos-imperdiveis">
+                        <div class="text-card-jogos-imperdiveis">
+                            <p class="tag-regular">COLEÇÃO BRASIL</p>
+                            <div class="titulo-e-dev-jogos-imperdiveis">
+                                <p class="subtitle-large">Lendas Urbanas</p>
+                                <p class="body-small">Desenvolvido por Yara Inc.</p>
+                                <p class="body-regular">Um jogo de terror baseado nas assombrações e lendas urbanas do Brasil.</p>
+                                <div class="tags-jogos-imperdiveis">
+                                    <p class="tag-small">Ação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Simulação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Jogador único</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botoes-jogos-imperdiveis">
+                            <a href="" class="btn">Jogar agora</a>
+                            <a href="" class="btn-outline">R$ 10,99</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria Esporte -->
+        <div class="categorias">
+            <h2>Esporte</h2>
+            <div class="container-doscards">
+                <div class="card-jogosfav">
+                    <img src="../images/img-card01-jogos-imperdiveis.svg" alt="Imagem do jogo Iara e o Canto das Águas" class="img-card-jogos-imperdiveis">
+                    <div class="content-card-jogos-imperdiveis">
+                        <div class="text-card-jogos-imperdiveis">
+                            <p class="tag-special">NOVO JOGO</p>
+                            <div class="titulo-e-dev-jogos-imperdiveis">
+                                <p class="subtitle-large">Iara e o Canto das Águas</p>
+                                <p class="body-small">Desenvolvido por Yara Inc.</p>
+                                <p class="body-regular">Um jogo imersivo inspirado na lenda da Iara, que mistura exploração e narrativa.</p>
+                                <div class="tags-jogos-imperdiveis">
+                                    <p class="tag-small">Ação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Simulação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Jogador único</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botoes-jogos-imperdiveis">
+                            <a href="" class="btn">Jogar agora</a>
+                            <a href="" class="btn-outline">Grátis</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-jogosfav">
+                    <img src="../images/img-card02-jogos-imperdiveis.svg" alt="Imagem do jogo Guardiões da Floresta" class="img-card-jogos-imperdiveis">
+                    <div class="content-card-jogos-imperdiveis">
+                        <div class="text-card-jogos-imperdiveis">
+                            <p class="tag-regular">COLEÇÃO AMAZÔNIA</p>
+                            <div class="titulo-e-dev-jogos-imperdiveis">
+                                <p class="subtitle-large">Guardiões da Floresta</p>
+                                <p class="body-small">Desenvolvido por Yara Inc.</p>
+                                <p class="body-regular">Um RPG ambientado nas florestas brasileiras, onde você luta contra forças místicas.</p>
+                                <div class="tags-jogos-imperdiveis">
+                                    <p class="tag-small">Ação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Simulação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Jogador único</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botoes-jogos-imperdiveis">
+                            <a href="" class="btn">Jogar agora</a>
+                            <a href="" class="btn-outline">R$ 20,99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-jogosfav">
+                    <img src="../images/img-card03-jogos-imperdiveis.svg" alt="Imagem do jogo Lendas Urbanas" class="img-card-jogos-imperdiveis">
+                    <div class="content-card-jogos-imperdiveis">
+                        <div class="text-card-jogos-imperdiveis">
+                            <p class="tag-regular">COLEÇÃO BRASIL</p>
+                            <div class="titulo-e-dev-jogos-imperdiveis">
+                                <p class="subtitle-large">Lendas Urbanas</p>
+                                <p class="body-small">Desenvolvido por Yara Inc.</p>
+                                <p class="body-regular">Um jogo de terror baseado nas assombrações e lendas urbanas do Brasil.</p>
+                                <div class="tags-jogos-imperdiveis">
+                                    <p class="tag-small">Ação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Simulação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Jogador único</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botoes-jogos-imperdiveis">
+                            <a href="" class="btn">Jogar agora</a>
+                            <a href="" class="btn-outline">R$ 10,99</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria Simulação -->
+        <div class="categorias">
+            <h2>Simulação</h2>
+            <div class="container-doscards">
+                <div class="card-jogosfav">
+                    <img src="../images/img-card01-jogos-imperdiveis.svg" alt="Imagem do jogo Iara e o Canto das Águas" class="img-card-jogos-imperdiveis">
+                    <div class="content-card-jogos-imperdiveis">
+                        <div class="text-card-jogos-imperdiveis">
+                            <p class="tag-special">NOVO JOGO</p>
+                            <div class="titulo-e-dev-jogos-imperdiveis">
+                                <p class="subtitle-large">Iara e o Canto das Águas</p>
+                                <p class="body-small">Desenvolvido por Yara Inc.</p>
+                                <p class="body-regular">Um jogo imersivo inspirado na lenda da Iara, que mistura exploração e narrativa.</p>
+                                <div class="tags-jogos-imperdiveis">
+                                    <p class="tag-small">Ação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Simulação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Jogador único</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botoes-jogos-imperdiveis">
+                            <a href="" class="btn">Jogar agora</a>
+                            <a href="" class="btn-outline">Grátis</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-jogosfav">
+                    <img src="../images/img-card02-jogos-imperdiveis.svg" alt="Imagem do jogo Guardiões da Floresta" class="img-card-jogos-imperdiveis">
+                    <div class="content-card-jogos-imperdiveis">
+                        <div class="text-card-jogos-imperdiveis">
+                            <p class="tag-regular">COLEÇÃO AMAZÔNIA</p>
+                            <div class="titulo-e-dev-jogos-imperdiveis">
+                                <p class="subtitle-large">Guardiões da Floresta</p>
+                                <p class="body-small">Desenvolvido por Yara Inc.</p>
+                                <p class="body-regular">Um RPG ambientado nas florestas brasileiras, onde você luta contra forças místicas.</p>
+                                <div class="tags-jogos-imperdiveis">
+                                    <p class="tag-small">Ação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Simulação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Jogador único</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botoes-jogos-imperdiveis">
+                            <a href="" class="btn">Jogar agora</a>
+                            <a href="" class="btn-outline">R$ 20,99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-jogosfav">
+                    <img src="../images/img-card03-jogos-imperdiveis.svg" alt="Imagem do jogo Lendas Urbanas" class="img-card-jogos-imperdiveis">
+                    <div class="content-card-jogos-imperdiveis">
+                        <div class="text-card-jogos-imperdiveis">
+                            <p class="tag-regular">COLEÇÃO BRASIL</p>
+                            <div class="titulo-e-dev-jogos-imperdiveis">
+                                <p class="subtitle-large">Lendas Urbanas</p>
+                                <p class="body-small">Desenvolvido por Yara Inc.</p>
+                                <p class="body-regular">Um jogo de terror baseado nas assombrações e lendas urbanas do Brasil.</p>
+                                <div class="tags-jogos-imperdiveis">
+                                    <p class="tag-small">Ação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Simulação</p>
+                                    <p class="tag-small">✶</p>
+                                    <p class="tag-small">Jogador único</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botoes-jogos-imperdiveis">
+                            <a href="" class="btn">Jogar agora</a>
+                            <a href="" class="btn-outline">R$ 10,99</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- fim do container principal -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerboxgeral">
+            <div class="footerbox1">
+                <div class="iconsleft0">
+                    <img src="../images/Vector.png">
+                    <div class="iconsleft">
+                        <div class="iconsleft1">
+                            <a href="whatsapp">
+                                <img src="../images/whatsapp 1.png" alt="logo whatsapp">
+                            </a>
+                            <div class="linkedin">
+                                <a href="">
+                                    <img src="../images/linkedin 1.png" alt="logo linkedin">
+                                </a>
+                            </div>
+                            <div class="medium">
+                                <a href="">
+                                    <img src="../images/medium 1.png" alt="logo medium">
+                                </a>
+                            </div>
+                            <div class="insta">
+                                <a href="">
+                                    <img src="../images/instagram 1.png" alt="logo instagram">   
+                                </a>
+                            </div>
+                        </div>
+                        <div class="direitos">Feito no Brasil. Iara Games © 2024. Todos os direitos reservados.</div>
+                    </div>
+                </div>
+                <div class="footerboxright">
+                    <div class="footerbox">
+                        <div class="footercontainer">
+                            <div class="menutitulo">Jogos</div>
+                            <div class="menufooter1">
+                                <a href="" class="menufooter">Por categoria</a>
+                                <a href="" class="menufooter">Melhores da semana</a>
+                                <a href="" class="menufooter">Mais jogados</a>
+                                <a href="" class="menufooter" >Clássicos</a>
+                            </div>
+                        </div>
+                        
+                        <div class="footercontainer1">
+                            <div class="footercontainer">
+                                <div class="menutitulo">Desenvolvedores</div>
+                                <div class="menufooter1">
+                                    <a href="" class="menufooter">Rede &lt;dev/br&gt;</a>
+                                    <a href="" class="menufooter">Trabalhe com a gente</a>
+                                    <a href="" class="menufooter">Contrate um &lt;dev/&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footercontainer">
+                            <div class="menutitulo">Recursos</div>
+                            <div class="menufooter1">
+                                <a href="" class="menufooter">Documentação </a>
+                            </div>
+                        </div>
+                        <div class="footercontainer">
+                            <div class="menutitulo">Institucional</div>
+                            <div class="menufooter1">
+                                <a href="" class="menufooter">Sobre</a>
+                                <a href="" class="menufooter">Contatos</a>
+                                <a href="" class="menufooter">Carreira</a>
+                                <a href="" class="menufooter">Política de privacidade</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="idioma">
+                        <div class="br">🇧🇷</div>
+                        <div class="idiomabr">Português (Brasil)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- fim do footer  -->
+</body>
+</html>
