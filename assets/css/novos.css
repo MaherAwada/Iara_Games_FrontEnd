@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E002F !important;
+    color: #FFFFFF !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+
+:root {
+    --roxo-800: #0E002F;
+    --roxo-700: #340576;
+    --roxo-600: #5604C8;
+    --roxo-500: #6C05FA;
+    --roxo-400: #8441F1;
+    --roxo-300: #A371F4;
+    --roxo-200: #C2A0F8;
+    --roxo-100: #E0D0FB;
+
+    --verde-800: #111F00;
+    --verde-700: #396600;
+    --verde-600: #569900;
+    --verde-500: #81E500;
+    --verde-400: #A0FF27;
+    --verde-300: #C4FA7F;
+    --verde-200: #DFFEB9;
+    --verde-100: #F6FFEB;
+
+    --cinza-700: #232B34;
+    --cinza-600: #384552;
+    --cinza-500: #475062;
+    --cinza-400: #5B6474;
+    --cinza-300: #747F95;
+    --cinza-200: #9AA2B2;
+    --cinza-100: #E4EAF4;
+
+    --branco: #fff;
+    --preto: #000;
+    --radio-gradient-roxo: linear-gradient(142deg, rgba(150,96,228,1) 0%, rgba(150,96,228,1) 20%, rgba(86,4,200,1) 49%);}
+
+
+    .btn {
+        padding: 10px 16px;
+        text-decoration: none;
+        border-radius: 28px;
+        border: 1px solid var(--roxo-400);
+        background: var(--radio-gradient-roxo);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600px;
+        line-height: 100%;
+        letter-spacing: 0.72px;
+        text-transform: uppercase;
+        color: var(--branco);
+    }
+
+    .btn:hover {
+        opacity: 60%;
+    }
+    
+    .btn-outline {
+        padding: 10px 16px;
+        text-decoration: none;
+        border-radius: 28px;
+        border: 1px solid var(--roxo-400);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600px;
+        line-height: 100%;
+        letter-spacing: 0.72px;
+        text-transform: uppercase;
+        color: var(--branco);
+    }
+    
+    .btn-outline:hover {
+        opacity: 60%;
+    }
+
+
+
+.navigation-bar {
+    background-color: #180142;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid var(--roxo-300);
+}
+
+.navigation-bar a{
+text-decoration: none;
+color: var(--branco);
+}
+
+.navigation-link, .submit-game-button {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+    height: 45px;
+}
+
+.navigation-link {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-right: 15px; 
+}
+
+.navigation-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.site-logo {
+    width: 150px;
+}
+
+.dropdown-menu {
+    background-color: var(--roxo-100);
+    border: 1px solid var(--roxo-200);
+    width: 200px;
+    padding: 10px 15px;
+}
+
+.user-menu-item {
+    color: #340576;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+/*Fim da NavBar*/
+
+/*Conteudo*/
+.section-melhor-jogo-da-semana {
+    display: flex;
+    width: 80vw;
+    max-width: 1225px;
+    min-height: 600px;
+    align-items: center;
+    background-image: url(../images/section-melhor-jogo-da-semana.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: solid 1px var(--roxo-200);
+    padding: 0 60px;
+    color: var(--branco);
+}
+
+.content-melhor-jogo-da-semana {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.text-descricao-melhor-jogo-da-semana {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    gap: 32px;
+
+}
+
+.botoes-melhor-jogo-da-semana {
+    display: flex;
+    gap: 12px;
+}
+
+.text-descricao-melhor-jogo-da-semana h2{
+        font-family: "Jersey 10", sans-serif;
+        font-size: 50px;
+}
+
+
+
+.destaque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    padding: 20px 200px;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+.conteudo {
+  max-width: 600px;
+}
+
+.tags-destaque {
+  font-size: 12px;
+  color: #aaa;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.tags-destaque span{
+        margin-right: 12px;
+}
+
+.conteudo h1{
+
+  line-height: 1.3;
+  margin-bottom: 24px;
+  color: #ffffff;
+    font-family: "Jersey 10", sans-serif;
+        font-size: 50px;
+}
+
+
+.conteudo h1 span{
+color: #ffffff;
+}
+
+.conteudo p{
+    
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 30px;
+
+}
+
+.botoesDestaque{
+    display: flex;
+  gap: 16px;
+}
+
+.btn-dejogar{
+        background: var(--radio-gradient-roxo);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.btn-dejogar:hover{
+    background-color: #5a40cc;
+}
+
+.btn-degraça{
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-degraça:hover{
+  border-color: white;
+}
+
+.imagemdestaque img{
+width: 550px;
+  border-radius: 8px;
+  height: 550px;
+}
+
+
+.categorias h2{
+padding: 20px;
+margin-left: 10%;
+font-family: "Jersey 10", sans-serif;
+font-size: 55px;
+}
+.container-doscards{
+        display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card-jogosfav{
+background-color: #1e0540;
+border-radius: 16px;
+border: solid 2px var(--roxo-200);
+overflow: hidden;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+padding: 16px;     
+margin-bottom: 40px;
+width: 400px;
+max-width: 800px;
+}
+
+.card-jogosfav img {
+width: 100%;
+overflow: hidden;
+border-radius: 6px;
+}
+
+.img-card-jogos-imperdiveis{
+    height: 200px;
+    width: 100%;
+}
+.content-card-jogos-imperdiveis {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    align-self: stretch;
+}
+.content-card-jogos-imperdiveis p{
+    max-height: 30px;
+}
+
+.text-card-jogos-imperdiveis {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.titulo-e-dev-jogos-imperdiveis {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.titulo-e-dev-jogos-imperdiveis .body-small {
+    color: var(--cinza-200);
+    padding-bottom: 12px;
+}
+
+.botoes-jogos-imperdiveis {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.text-card-jogos-imperdiveis  {
+    color: var(--branco);
+}
+
+
+.text-card-jogos-imperdiveis .tag-regular {
+    color: var(--cinza-400);
+    padding-top: 35px;
+    padding-bottom: 5px;
+}
+
+.body-small{
+    padding-top: 0px;
+    
+}
+
+.subtitle-large{
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+.tags-jogos-imperdiveis {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: var(--roxo-300);
+    padding: 12px 0px;
+}
+.tags-jogos-imperdiveis p {
+    color: var(--roxo-200);
+}
+
+.tag-special{
+    color: var(--verde-500);
+    padding-top: 35px;
+    padding-bottom: 5px;
+}
+
+/*fim do conteudo*/
+
+/*Inicio do footer*/
+.menufooter {
+    color: #E0D0FB; 
+    font-size: 14px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    line-height: 18px; 
+    word-wrap: break-word; 
+    text-decoration: none;         
+}
+
+.menutitulo {
+    color: white;
+    font-size: 14px;
+    font-family: Inter; 
+    font-weight: 700; 
+    line-height: 20px; 
+    word-wrap: break-word;
+}
+
+.menufooter1 {
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items:  flex-start; 
+    gap: 12px; 
+    display: flex;
+}
+
+.footercontainer {
+    flex-direction:column; 
+    justify-content :flex-start; 
+    align-items: flex-start; 
+    gap: 18px; 
+    display: inline-flex;
+}
+
+.footercontainer1 {
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 500px; 
+    display: inline-flex
+}
+
+.footerbox {
+    justify-content: flex-start;
+    align-items: flex-start; 
+    gap: 54px; 
+    display: inline-flex;
+}
+
+.idioma {
+    padding-left: 12px; 
+    padding-right: 12px; 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    background: rgba(62, 3, 144, 0.20); 
+    border-radius: 4px; 
+    border: 1px #C2A0F8 solid; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 6px; 
+    display: inline-flex;
+}
+
+.br {
+    text-align: right; 
+    color: black; 
+    font-size: 12px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    line-height: 12px; 
+    word-wrap: break-word;
+}
+
+.idiomabr {
+    text-align: center; 
+    color: #E0D0FB; 
+    font-size: 12px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    line-height: 18px; 
+    word-wrap: break-word;
+}
+
+.footerboxright {
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    gap: 65px; 
+    display: inline-flex;
+}
+
+.direitos {
+    width: 209px; 
+    color: #FAF8FF; 
+    font-size: 12px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    line-height: 14px; 
+    word-wrap: break-word;
+}
+
+.insta ,
+.medium,
+.linkedin,
+.whatsapp {
+    width: 18px; 
+    height: 18px; 
+    position: relative;
+}
+
+.iconsleft1 {
+    align-self: stretch; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 24px; 
+    display: inline-flex;
+}
+
+.iconsleft {
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 24px; 
+    display: flex
+}
+
+.iconsleft0 {
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 44px; 
+    display: inline-flex;
+}
+
+.footerbox1 {
+    width: 1225px; 
+    justify-content: space-between; 
+    align-items: center; 
+    display: inline-flex;
+}
+
+.footerboxgeral {
+    width: 100%; 
+    height: 392px;
+    margin-top: 62px;
+    background: #5604C8; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: inline-flex;
+}
+
+.jogar {
+    font-size: 12px; 
+    font-family: Inter; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    line-height: 16px; 
+    letter-spacing: 0.72px; 
+    word-wrap: break-word
+}
+
+.btnsmall {
+    padding-left: 12px; 
+    padding-right: 12px; 
+    padding-top: 6px; 
+    padding-bottom: 6px; 
+    background: linear-gradient(0deg, #8441F1 0%, #8441F1 100%), 
+    radial-gradient(31.75% 9.40% at 44.79% 5.27%, #C2A0F8 0%, #5604C8 100%); 
+    border-radius: 28px; 
+    border: 1px #A371F4 solid;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+.fonte3 {
+    color: #E6E6E6; 
+    font-size: 12px; 
+    font-family: Inter; 
+    font-weight: 500; 
+    text-transform: uppercase;
+    line-height: 16px; 
+    letter-spacing: 0.72px; 
+    word-wrap: break-word;
+}
+
+.fonte2 {
+    text-align: center; 
+    color: #E6E6E6; 
+    font-size: 12px; 
+    font-family: Inter; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    word-wrap: break-word;
+}
+
+.fonte1 {
+    text-align: center; 
+    color: #E6E6E6; 
+    font-size: 12px; 
+    font-family: Inter; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    line-height: 16px; 
+    letter-spacing: 0.72px; 
+    word-wrap: break-word;
+}
+
+/* fim do footer */
